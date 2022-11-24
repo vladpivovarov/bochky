@@ -1,0 +1,9 @@
+.personal {
+  margin-top: 20px;
+  font-size: 0.7rem;
+  opacity: 0.8;
+
+  & a {
+    text-decoration: underline;
+  }
+}

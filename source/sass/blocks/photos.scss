@@ -1,0 +1,139 @@
+.photos {
+  padding-bottom: 30px;
+  background-color: #fff;
+  background-image: url("../img/bochka-right.png");
+  background-position: top right -270px;
+  background-size: 700px auto;
+  background-repeat: no-repeat;
+
+  @media (max-width: $tablet) {
+    background-size: 350px auto;
+    background-position: top right -135px;
+  }
+}
+
+.photos__num {
+  display: inline-block;
+  margin: 0 40px;
+  background: url("../img/Квадро.webp");
+  background-size: cover;
+  color: #000;
+  font-size: 14.444rem;
+  font-weight: 600;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  @media (max-width: $tablet) {
+    font-size: 10rem;
+    margin: 0 20px;
+  }
+
+  @media (max-width: $mobile) {
+    font-size: 7rem;
+    margin: 0 20px;
+  }
+}
+
+.photos__title {
+  text-align: left;
+  font-size: 2.222rem;
+  font-weight: 400;
+  margin-left: 150px;
+  display: flex;
+  align-items: center;
+
+  @media (max-width: $tablet) {
+    font-size: 1.9rem;
+    margin: 0;
+    justify-content: center;
+  }
+
+  @media (max-width: $mobile) {
+    font-size: 1rem;
+  }
+}
+
+.photos__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 80px;
+
+  @media (max-width: $mobile) {
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 40px;
+  }
+}
+
+.photos__link-img {
+  display: block;
+  width: 100%;
+  height: 15vw;
+  overflow: hidden;
+
+  @media (max-width: $mobile) {
+    height: 30vw;
+  }
+}
+
+.box__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.photos__btn {
+  display: block;
+  width: 260px;
+  margin: 0 auto;
+  padding: 25px 40px 22px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-align: center;
+  color: $green;
+  border: 3px solid $green;
+  border-radius: 10px;
+  text-transform: uppercase;
+  background-color: #fff;
+  transition: all .3s;
+  cursor: pointer;
+
+  &:hover {
+    color: #fff;
+    background-color: $green;
+  }
+
+  @media (max-width: $mobile) {
+    width: 70%;
+    padding: 20px 32px 18px;
+  }
+}
+
+.photos__list_2 {
+  margin-top: 0;
+  opacity: 0;
+  visibility: hidden;
+  height: 0;
+  transition: opacity 0.3s, margin 0.3s;
+}
+
+.photos__list_open {
+  position: relative;
+  margin-top: 80px;
+  margin-bottom: 200px;
+  opacity: 1;
+  visibility: visible;
+  height: auto;
+
+  @media (max-width: $mobile) {
+    margin-top: 40px;
+    margin-bottom: 100px;
+  }
+}
+
+.photos__btn2 {
+  position: absolute;
+  top: calc(100% + 50px);
+  left: 50%;
+  transform: translateX(-50%);
+}
