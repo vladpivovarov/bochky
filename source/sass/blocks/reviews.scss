@@ -29,6 +29,7 @@
   }
 
   @media (max-width: $tablet) {
+    padding-top: 80px;
     &::after {
       transform: translate(-50%, 50%) scale(0.9);
     }

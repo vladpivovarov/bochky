@@ -18,6 +18,7 @@ import modal from "./modules/modal";
 import shit from "./modules/shit";
 import stick from "./modules/stick";
 import photos from "./modules/photos";
+import lazy from "./modules/lazy";
 
 
 try {
@@ -136,6 +137,12 @@ try {
 
 try {
   photos();
+} catch (error) {
+  console.log(error);
+}
+
+try {
+  lazy();
 } catch (error) {
   console.log(error);
 }

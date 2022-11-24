@@ -42,6 +42,7 @@
   }
 
   @media (max-width: $mobile) {
+    background-image: url("../img/mobile/bg.webp");
     background-position: top right -200px;
   }
 
@@ -78,6 +79,7 @@
 
   @media (max-width: $mobile) {
     padding-top: 100px;
+    padding-bottom: 0;
   }
 }
 

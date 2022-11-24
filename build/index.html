@@ -7,10 +7,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Готовые бани-бочки за 1 день от Bochky®</title>
   <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
-  <link rel="apple-touch-icon" href="./img/android-chrome-192x1.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="./img/android-chrome-192x1.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="./img/android-chrome-192x1.png">
-  <link rel="apple-touch-startup-image" href="./img/android-chrome-192x1.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/video.js/7.12.0/video-js.min.css">
   <link rel="stylesheet" href="css/style.min.css">
   <script src="./js/additionally/modernizr-custom.js" async></script>
@@ -186,8 +186,8 @@
           </div>
           <ul class="quiz-wrap__list">
             <li class="quiz-wrap__item">
-              <div class="quiz-wrap__img-block">
-                <img src="./img/tablet.webp" class="quiz-wrap__img quiz-wrap__img_1">
+              <div class="quiz-wrap__img-block img-load">
+                <img data-source="./img/tablet.webp" src="./img/0.png" class="quiz-wrap__img quiz-wrap__img_1">
               </div>
               <div class="quiz-wrap__desc">
                 <strong>Расчет стоимости</strong>
@@ -196,8 +196,8 @@
               </div>
             </li>
             <li class="quiz-wrap__item">
-              <div class="quiz-wrap__img-block">
-                <img src="./img/magazine-circle.webp" class="quiz-wrap__img quiz-wrap__img_2">
+              <div class="quiz-wrap__img-block img-load">
+                <img data-source="./img/magazine-circle.webp" src="./img/0.png" class="quiz-wrap__img quiz-wrap__img_2">
               </div>
               <div class="quiz-wrap__desc">
                 <strong>"17 рекомендаций
@@ -208,8 +208,8 @@
               </div>
             </li>
             <li class="quiz-wrap__item">
-              <div class="quiz-wrap__img-block">
-                <img src="./img/Giftbox.webp" class="quiz-wrap__img quiz-wrap__img_3">
+              <div class="quiz-wrap__img-block img-load">
+                <img data-source="./img/Giftbox.webp" src="./img/0.png" class="quiz-wrap__img quiz-wrap__img_3">
               </div>
               <div class="quiz-wrap__desc">
                 <strong>Два подарка</strong>
@@ -219,6 +219,7 @@
                 на
                 <strong class="color"> 14 000р.</strong>
               </div>
+              <div class="top visually-hidden"></div>
             </li>
           </ul>
           <form class="quiz">
@@ -303,8 +304,9 @@
                   <li class="quiz__variant">
                     <label class="quiz__label">
                       <input type="radio" value="standart" name="type" class="quiz__input visually-hidden">
-                      <div class="quiz__variant-inner">
-                        <img src="./img/баня-бочка.webp" alt="Баня-бочка от 133т.р." class="quiz__variant-img">
+                      <div class="quiz__variant-inner img-load">
+                        <img src="./img/0.png" data-source="./img/баня-бочка.webp" alt="Баня-бочка от 133т.р."
+                          class="quiz__variant-img">
                       </div>
                       <div class="quiz__variant-desc">
                         Баня-бочка от 133т.р.
@@ -314,8 +316,9 @@
                   <li class="quiz__variant">
                     <label class="quiz__label">
                       <input type="radio" value="quadro-oval" name="type" class="quiz__input visually-hidden">
-                      <div class="quiz__variant-inner">
-                        <img src="./img/Квадро-овал.webp" alt="Квадро-овал бочка от 372т.р." class="quiz__variant-img">
+                      <div class="quiz__variant-inner img-load">
+                        <img data-source="./img/Квадро-овал.webp" src="img/0.png" alt="Квадро-овал бочка от 372т.р."
+                          class="quiz__variant-img">
                       </div>
                       <div class="quiz__variant-desc">
                         Квадро-овал бочка от 372т.р.
@@ -325,8 +328,9 @@
                   <li class="quiz__variant">
                     <label class="quiz__label">
                       <input type="radio" value="quadro" name="type" class="quiz__input visually-hidden">
-                      <div class="quiz__variant-inner">
-                        <img src="./img/Квадро.webp" alt="Квадро-бочка от 171т.р." class="quiz__variant-img">
+                      <div class="quiz__variant-inner img-load">
+                        <img data-source="./img/Квадро.webp" src="img/0.png" alt="Квадро-бочка от 171т.р."
+                          class="quiz__variant-img">
                       </div>
                       <div class="quiz__variant-desc">
                         Квадро-бочка от 171т.р.
@@ -336,8 +340,9 @@
                   <li class="quiz__variant">
                     <label class="quiz__label">
                       <input type="radio" value="oval" name="type" class="quiz__input visually-hidden">
-                      <div class="quiz__variant-inner">
-                        <img src="./img/Овал.webp" alt="Овал-бочка от 339т.р." class="quiz__variant-img">
+                      <div class="quiz__variant-inner img-load">
+                        <img data-source="./img/Овал.webp" src="img/0.png" alt="Овал-бочка от 339т.р."
+                          class="quiz__variant-img">
                       </div>
                       <div class="quiz__variant-desc">
                         Овал-бочка от 339т.р.
@@ -347,8 +352,9 @@
                   <li class="quiz__variant">
                     <label class="quiz__label">
                       <input type="radio" value="okta" name="type" class="quiz__input visually-hidden">
-                      <div class="quiz__variant-inner">
-                        <img src="./img/Окта.webp" alt="Окта-бочка от 169т.р." class="quiz__variant-img">
+                      <div class="quiz__variant-inner img-load">
+                        <img data-source="./img/Окта.webp" src="img/0.png" alt="Окта-бочка от 169т.р."
+                          class="quiz__variant-img">
                       </div>
                       <div class="quiz__variant-desc">
                         Окта-бочка от 169т.р.
@@ -372,8 +378,9 @@
                   <li class="quiz__variant">
                     <label class="quiz__label">
                       <input type="radio" value="already-yes" name="area" class="quiz__input visually-hidden">
-                      <div class="quiz__variant-inner">
-                        <img src="./img/Неготово.jpg" alt="Уже готова" class="quiz__variant-img">
+                      <div class="quiz__variant-inner img-load">
+                        <img data-source="./img/Неготово.jpg" src="img/0.png" alt="Уже готова"
+                          class="quiz__variant-img">
                       </div>
                       <div class="quiz__variant-desc">
                         Не готова
@@ -383,8 +390,9 @@
                   <li class="quiz__variant">
                     <label class="quiz__label">
                       <input type="radio" value="no-but" name="area" class="quiz__input visually-hidden">
-                      <div class="quiz__variant-inner">
-                        <img src="./img/Подготовимсами.jpg" alt="Не готова, но подготовим" class="quiz__variant-img">
+                      <div class="quiz__variant-inner img-load">
+                        <img data-source="./img/Подготовимсами.jpg" src="img/0.png" alt="Не готова, но подготовим"
+                          class="quiz__variant-img">
                       </div>
                       <div class="quiz__variant-desc">
                         Уже готова
@@ -394,9 +402,9 @@
                   <li class="quiz__variant">
                     <label class="quiz__label">
                       <input type="radio" value="want" name="area" class="quiz__input visually-hidden">
-                      <div class="quiz__variant-inner">
-                        <img src="./img/Хотим.jpg" alt="Хотим чтобы ваши специалисты подготовили"
-                          class="quiz__variant-img">
+                      <div class="quiz__variant-inner img-load">
+                        <img data-source="./img/Хотим.jpg" src="img/0.png"
+                          alt="Хотим чтобы ваши специалисты подготовили" class="quiz__variant-img">
                       </div>
                       <div class="quiz__variant-desc">
                         Хотим чтобы ваши специалисты подготовили
@@ -428,8 +436,9 @@
                   <li class="quiz__variant">
                     <label class="quiz__label">
                       <input type="radio" value="ready" name="installation" class="quiz__input visually-hidden">
-                      <div class="quiz__variant-inner">
-                        <img src="./img/Доставкавготовомвиде.webp" alt="Уже готова" class="quiz__variant-img">
+                      <div class="quiz__variant-inner img-load">
+                        <img data-source="./img/Доставкавготовомвиде.webp" src="img/0.png" alt="Уже готова"
+                          class="quiz__variant-img">
                       </div>
                       <div class="quiz__variant-desc">
                         Доставка в готовом виде
@@ -439,8 +448,9 @@
                   <li class="quiz__variant">
                     <label class="quiz__label">
                       <input type="radio" value="in-place" name="installation" class="quiz__input visually-hidden">
-                      <div class="quiz__variant-inner">
-                        <img src="./img/Сборканаучастке.webp" alt="Не готова, но подготовим" class="quiz__variant-img">
+                      <div class="quiz__variant-inner img-load">
+                        <img data-source="./img/Сборканаучастке.webp" src="img/0.png" alt="Не готова, но подготовим"
+                          class="quiz__variant-img">
                       </div>
                       <div class="quiz__variant-desc">
                         Сборка на участке
@@ -580,9 +590,9 @@
                   <li class="quiz__variant quiz__variant_gift">
                     <label class="quiz__label">
                       <input type="radio" value="yes" name="gift" class="quiz__input visually-hidden">
-                      <div class="quiz__variant-inner">
-                        <img src="./img/Подарок.webp" alt="2 садовых шезлонга стоимостью 14.000 руб"
-                          class="quiz__variant-img">
+                      <div class="quiz__variant-inner img-load">
+                        <img data-source="./img/Подарок.webp" src="img/0.png"
+                          alt="2 садовых шезлонга стоимостью 14.000 руб" class="quiz__variant-img">
                       </div>
                       <div class="quiz__variant-desc">
                         2 садовых шезлонга "PREMIUM" стоимостью
@@ -695,8 +705,8 @@
         </div>
         <div class="advantages__body">
           <div class="container advantages__container">
-            <div class="advantages__img-block">
-              <img src="./img/4.webp" alt="Наша баня-бочка" class="advantages__img">
+            <div class="advantages__img-block img-load">
+              <img data-source="./img/4.webp" src="img/0.png" alt="Наша баня-бочка" class="advantages__img">
               <ul class="advantages__mega-list">
                 <li class="advantages__mega-item">
                   <div class="advantages__mega-icon advantages__mega-icon_fund">
@@ -804,7 +814,7 @@
             <span class="title__important">Скачайте актуальный прайс-каталог</span>
             на все наши бани-бочки
             <div class="price__img-pdf-block">
-              <img src="./img/pdf-2.webp" alt="pdf" class="price__img-pdf">
+              <img data-source="./img/pdf-2.webp" src="img/0.png" alt="pdf" class="price__img-pdf">
               <div class="price__img-pdf-text">
                 <div class="pdf-line-1">Pdf</div>
                 <div class="pdf-line-2">2.5 мб</div>
@@ -893,16 +903,18 @@
           </h2>
           <ul class="want__list">
             <li class="want__item">
-              <div class="want__img-block">
-                <img src="./img/exhibition.webp" alt="Наша выставка" class="want__img" width="300px">
+              <div class="want__img-block img-load">
+                <img data-source="./img/exhibition.webp" src="img/0.png" alt="Наша выставка" class="want__img"
+                  width="300px">
               </div>
               <div class="want__desc">
                 Приглашаем посетить выставку и посмотреть представленные образцы вживую
               </div>
             </li>
             <li class="want__item">
-              <div class="want__img-block">
-                <img src="./img/contract.webp" alt="Заключаем договор" class="want__img" width="300px">
+              <div class="want__img-block img-load">
+                <img data-source="./img/contract.webp" src="img/0.png" alt="Заключаем договор" class="want__img"
+                  width="300px">
               </div>
               <div class="want__desc">
                 Выбираем модель и комплектацию, обговариваем сроки и заключаем договор, вы вносите предоплату за первую
@@ -910,16 +922,17 @@
               </div>
             </li>
             <li class="want__item">
-              <div class="want__img-block">
-                <img src="./img/delivery.webp" alt="Доставляем бочку-баню" class="want__img" width="300px">
+              <div class="want__img-block img-load">
+                <img data-source="./img/delivery.webp" src="img/0.png" alt="Доставляем бочку-баню" class="want__img"
+                  width="300px">
               </div>
               <div class="want__desc">
                 Доставляем бочку-баню на ваш участок и устанавливаем
               </div>
             </li>
             <li class="want__item">
-              <div class="want__img-block">
-                <img src="./img/yess.png" alt="Баня готова" class="want__img" width="300px">
+              <div class="want__img-block img-load">
+                <img data-source="./img/yess.png" src="img/0.png" alt="Баня готова" class="want__img" width="300px">
               </div>
               <div class="want__desc">
                 Баня готова, можно париться!
@@ -944,28 +957,29 @@
               <article class="slider-portfolio__screen">
                 <div class="slider-portfolio__inner">
                   <div class="slider-portfolio__left">
-                    <div class="slider-portfolio__img-block">
-                      <img src="./img/slider-portfolio/1.webp" alt="" class="slider-portfolio__img">
+                    <div class="slider-portfolio__img-block img-load">
+                      <img data-source="./img/slider-portfolio/1.webp" src="img/0.png" alt=""
+                        class="slider-portfolio__img">
                       <ul class="slider-portfolio__mini-list">
                         <div class="slider-portfolio__mini-desc">Еще фото</div>
                         <li class="slider-portfolio__mini-item">
-                          <a class="colorbox slider-portfolio__mini-link" rel="colorbox" data-fancybox="group-1"
-                            href="./img/slider-portfolio/2.jpg">
-                            <img src="./img/slider-portfolio/2.jpg" alt="Пример проекта"
+                          <a class="colorbox slider-portfolio__mini-link img-load" rel="colorbox"
+                            data-fancybox="group-1" href="./img/slider-portfolio/2.jpg">
+                            <img data-source="./img/slider-portfolio/2.jpg" src="img/0.png" alt="Пример проекта"
                               class="slider-portfolio__mini-img">
                           </a>
                         </li>
                         <li class="slider-portfolio__mini-item">
-                          <a class="colorbox slider-portfolio__mini-link" rel="colorbox" data-fancybox="group-1"
-                            href="./img/slider-portfolio/3.jpg">
-                            <img src="./img/slider-portfolio/3.jpg" alt="Пример проекта"
+                          <a class="colorbox slider-portfolio__mini-link img-load" rel="colorbox"
+                            data-fancybox="group-1" href="./img/slider-portfolio/3.jpg">
+                            <img data-source="./img/slider-portfolio/3.jpg" src="img/0.png" alt="Пример проекта"
                               class="slider-portfolio__mini-img">
                           </a>
                         </li>
                         <li class="slider-portfolio__mini-item">
-                          <a class="colorbox slider-portfolio__mini-link" rel="colorbox" data-fancybox="group-1"
-                            href="./img/slider-portfolio/4.jpg">
-                            <img src="./img/slider-portfolio/4.jpg" alt="Пример проекта"
+                          <a class="colorbox slider-portfolio__mini-link img-load" rel="colorbox"
+                            data-fancybox="group-1" href="./img/slider-portfolio/4.jpg">
+                            <img data-source="./img/slider-portfolio/4.jpg" src="img/0.png" alt="Пример проекта"
                               class="slider-portfolio__mini-img">
                           </a>
                         </li>
@@ -1037,28 +1051,29 @@
               <article class="slider-portfolio__screen">
                 <div class="slider-portfolio__inner">
                   <div class="slider-portfolio__left">
-                    <div class="slider-portfolio__img-block">
-                      <img src="./img/slider-portfolio/11.jpg" alt="" class="slider-portfolio__img">
+                    <div class="slider-portfolio__img-block img-load">
+                      <img data-source="./img/slider-portfolio/11.jpg" src="img/0.png" alt=""
+                        class="slider-portfolio__img">
                       <ul class="slider-portfolio__mini-list">
                         <div class="slider-portfolio__mini-desc">Еще фото</div>
                         <li class="slider-portfolio__mini-item">
-                          <a class="colorbox slider-portfolio__mini-link" rel="colorbox" data-fancybox="group-1"
-                            href="./img/slider-portfolio/12.jpg">
-                            <img src="./img/slider-portfolio/12.jpg" alt="Пример проекта"
+                          <a class="colorbox slider-portfolio__mini-link img-load" rel="colorbox"
+                            data-fancybox="group-1" href="./img/slider-portfolio/12.jpg">
+                            <img data-source="./img/slider-portfolio/12.jpg" src="img/0.png" alt="Пример проекта"
                               class="slider-portfolio__mini-img">
                           </a>
                         </li>
                         <li class="slider-portfolio__mini-item">
-                          <a class="colorbox slider-portfolio__mini-link" rel="colorbox" data-fancybox="group-1"
-                            href="./img/slider-portfolio/13.jpg">
-                            <img src="./img/slider-portfolio/13.jpg" alt="Пример проекта"
+                          <a class="colorbox slider-portfolio__mini-link img-load" rel="colorbox"
+                            data-fancybox="group-1" href="./img/slider-portfolio/13.jpg">
+                            <img data-source="./img/slider-portfolio/13.jpg" src="img/0.png" alt="Пример проекта"
                               class="slider-portfolio__mini-img">
                           </a>
                         </li>
                         <li class="slider-portfolio__mini-item">
-                          <a class="colorbox slider-portfolio__mini-link" rel="colorbox" data-fancybox="group-1"
-                            href="./img/slider-portfolio/14.jpg">
-                            <img src="./img/slider-portfolio/14.jpg" alt="Пример проекта"
+                          <a class="colorbox slider-portfolio__mini-link img-load" rel="colorbox"
+                            data-fancybox="group-1" href="./img/slider-portfolio/14.jpg">
+                            <img data-source="./img/slider-portfolio/14.jpg" src="img/0.png" alt="Пример проекта"
                               class="slider-portfolio__mini-img">
                           </a>
                         </li>
@@ -1130,28 +1145,29 @@
               <article class="slider-portfolio__screen">
                 <div class="slider-portfolio__inner">
                   <div class="slider-portfolio__left">
-                    <div class="slider-portfolio__img-block">
-                      <img src="./img/slider-portfolio/21.jpg" alt="" class="slider-portfolio__img">
+                    <div class="slider-portfolio__img-block img-load">
+                      <img data-source="./img/slider-portfolio/21.jpg" src="img/0.png" alt=""
+                        class="slider-portfolio__img">
                       <ul class="slider-portfolio__mini-list">
                         <div class="slider-portfolio__mini-desc">Еще фото</div>
                         <li class="slider-portfolio__mini-item">
-                          <a class="colorbox slider-portfolio__mini-link" rel="colorbox" data-fancybox="group-1"
-                            href="./img/slider-portfolio/22.jpg">
-                            <img src="./img/slider-portfolio/22.jpg" alt="Пример проекта"
+                          <a class="colorbox slider-portfolio__mini-link img-load" rel="colorbox"
+                            data-fancybox="group-1" href="./img/slider-portfolio/22.jpg">
+                            <img data-source="./img/slider-portfolio/22.jpg" src="img/0.png" alt="Пример проекта"
                               class="slider-portfolio__mini-img">
                           </a>
                         </li>
                         <li class="slider-portfolio__mini-item">
-                          <a class="colorbox slider-portfolio__mini-link" rel="colorbox" data-fancybox="group-1"
-                            href="./img/slider-portfolio/23.jpg">
-                            <img src="./img/slider-portfolio/23.jpg" alt="Пример проекта"
+                          <a class="colorbox slider-portfolio__mini-link img-load" rel="colorbox"
+                            data-fancybox="group-1" href="./img/slider-portfolio/23.jpg">
+                            <img data-source="./img/slider-portfolio/23.jpg" src="img/0.png" alt="Пример проекта"
                               class="slider-portfolio__mini-img">
                           </a>
                         </li>
                         <li class="slider-portfolio__mini-item">
-                          <a class="colorbox slider-portfolio__mini-link" rel="colorbox" data-fancybox="group-1"
-                            href="./img/slider-portfolio/24.jpg">
-                            <img src="./img/slider-portfolio/24.jpg" alt="Пример проекта"
+                          <a class="colorbox slider-portfolio__mini-link img-load" rel="colorbox"
+                            data-fancybox="group-1" href="./img/slider-portfolio/24.jpg">
+                            <img data-source="./img/slider-portfolio/24.jpg" src="img/0.png" alt="Пример проекта"
                               class="slider-portfolio__mini-img">
                           </a>
                         </li>
@@ -1223,28 +1239,29 @@
               <article class="slider-portfolio__screen">
                 <div class="slider-portfolio__inner">
                   <div class="slider-portfolio__left">
-                    <div class="slider-portfolio__img-block">
-                      <img src="./img/slider-portfolio/31.jpg" alt="" class="slider-portfolio__img">
+                    <div class="slider-portfolio__img-block img-load">
+                      <img data-source="./img/slider-portfolio/31.jpg" src="img/0.png" alt=""
+                        class="slider-portfolio__img">
                       <ul class="slider-portfolio__mini-list">
                         <div class="slider-portfolio__mini-desc">Еще фото</div>
                         <li class="slider-portfolio__mini-item">
-                          <a class="colorbox slider-portfolio__mini-link" rel="colorbox" data-fancybox="group-1"
-                            href="./img/slider-portfolio/32.jpg">
-                            <img src="./img/slider-portfolio/32.jpg" alt="Пример проекта"
+                          <a class="colorbox slider-portfolio__mini-link img-load" rel="colorbox"
+                            data-fancybox="group-1" href="./img/slider-portfolio/32.jpg">
+                            <img data-source="./img/slider-portfolio/32.jpg" src="img/0.png" alt="Пример проекта"
                               class="slider-portfolio__mini-img">
                           </a>
                         </li>
                         <li class="slider-portfolio__mini-item">
-                          <a class="colorbox slider-portfolio__mini-link" rel="colorbox" data-fancybox="group-1"
-                            href="./img/slider-portfolio/33.jpg">
-                            <img src="./img/slider-portfolio/33.jpg" alt="Пример проекта"
+                          <a class="colorbox slider-portfolio__mini-link img-load" rel="colorbox"
+                            data-fancybox="group-1" href="./img/slider-portfolio/33.jpg">
+                            <img data-source="./img/slider-portfolio/33.jpg" src="img/0.png" alt="Пример проекта"
                               class="slider-portfolio__mini-img">
                           </a>
                         </li>
                         <li class="slider-portfolio__mini-item">
-                          <a class="colorbox slider-portfolio__mini-link" rel="colorbox" data-fancybox="group-1"
-                            href="./img/slider-portfolio/34.jpg">
-                            <img src="./img/slider-portfolio/34.jpg" alt="Пример проекта"
+                          <a class="colorbox slider-portfolio__mini-link img-load" rel="colorbox"
+                            data-fancybox="group-1" href="./img/slider-portfolio/34.jpg">
+                            <img data-source="./img/slider-portfolio/34.jpg" src="img/0.png" alt="Пример проекта"
                               class="slider-portfolio__mini-img">
                           </a>
                         </li>
@@ -1335,158 +1352,182 @@
           </h2>
           <ul class="photos__list">
             <li class="photos__item">
-              <a class="colorbox photos__link-img" rel="colorbox" data-fancybox="group-1"
+              <a class="colorbox photos__link-img img-load" rel="colorbox" data-fancybox="group-1"
                 href="./img/photos/3d0c1ad4-e248-421e-b407-f13e082c8f84.webp">
-                <img src="./img/photos/3d0c1ad4-e248-421e-b407-f13e082c8f84.webp" alt="Пример проекта" class="box__img">
+                <img data-source="./img/photos/3d0c1ad4-e248-421e-b407-f13e082c8f84.webp" src="img/0.png"
+                  alt="Пример проекта" class="box__img">
               </a>
             </li>
             <li class="photos__item">
-              <a class="colorbox photos__link-img" rel="colorbox" data-fancybox="group-1"
+              <a class="colorbox photos__link-img img-load" rel="colorbox" data-fancybox="group-1"
                 href="./img/photos/21c59d06-02b4-44d0-9531-9dde6c2f57df.webp">
-                <img src="./img/photos/21c59d06-02b4-44d0-9531-9dde6c2f57df.webp" alt="Пример проекта" class="box__img">
+                <img data-source="./img/photos/21c59d06-02b4-44d0-9531-9dde6c2f57df.webp" src="img/0.png"
+                  alt="Пример проекта" class="box__img">
               </a>
             </li>
             <li class="photos__item">
-              <a class="colorbox photos__link-img" rel="colorbox" data-fancybox="group-1"
+              <a class="colorbox photos__link-img img-load" rel="colorbox" data-fancybox="group-1"
                 href="./img/photos/3b329abc-505b-4b70-9742-1aa7205eb029.webp">
-                <img src="./img/photos/3b329abc-505b-4b70-9742-1aa7205eb029.webp" alt="Пример проекта" class="box__img">
+                <img data-source="./img/photos/3b329abc-505b-4b70-9742-1aa7205eb029.webp" src="img/0.png"
+                  alt="Пример проекта" class="box__img">
               </a>
             </li>
             <li class="photos__item">
-              <a class="colorbox photos__link-img" rel="colorbox" data-fancybox="group-1"
+              <a class="colorbox photos__link-img img-load" rel="colorbox" data-fancybox="group-1"
                 href="./img/photos/IMG_0129.webp">
-                <img src="./img/photos/IMG_0129.webp" alt="Пример проекта" class="box__img">
+                <img data-source="./img/photos/IMG_0129.webp" src="img/0.png" alt="Пример проекта" class="box__img">
               </a>
             </li>
             <li class="photos__item">
-              <a class="colorbox photos__link-img" rel="colorbox" data-fancybox="group-1"
+              <a class="colorbox photos__link-img img-load" rel="colorbox" data-fancybox="group-1"
                 href="./img/photos/3A9ACA2C-280C-4D80-AB20-6C2534D19B70.webp">
-                <img src="./img/photos/3A9ACA2C-280C-4D80-AB20-6C2534D19B70.webp" alt="Пример проекта" class="box__img">
+                <img data-source="./img/photos/3A9ACA2C-280C-4D80-AB20-6C2534D19B70.webp" src="img/0.png"
+                  alt="Пример проекта" class="box__img">
               </a>
             </li>
             <li class="photos__item">
-              <a class="colorbox photos__link-img" rel="colorbox" data-fancybox="group-1"
+              <a class="colorbox photos__link-img img-load" rel="colorbox" data-fancybox="group-1"
                 href="./img/photos/IMG_0564.webp">
-                <img src="./img/photos/IMG_0564.webp" alt="Пример проекта" class="box__img">
+                <img data-source="./img/photos/IMG_0564.webp" src="img/0.png" alt="Пример проекта" class="box__img">
               </a>
             </li>
             <li class="photos__item">
-              <a class="colorbox photos__link-img" rel="colorbox" data-fancybox="group-1"
+              <a class="colorbox photos__link-img img-load" rel="colorbox" data-fancybox="group-1"
                 href="./img/photos/10e3a54d-6e5e-47d3-8e27-0a47976b494b.webp">
-                <img src="./img/photos/10e3a54d-6e5e-47d3-8e27-0a47976b494b.webp" alt="Пример проекта" class="box__img">
+                <img data-source="./img/photos/10e3a54d-6e5e-47d3-8e27-0a47976b494b.webp" src="img/0.png"
+                  alt="Пример проекта" class="box__img">
               </a>
             </li>
             <li class="photos__item">
-              <a class="colorbox photos__link-img" rel="colorbox" data-fancybox="group-1"
+              <a class="colorbox photos__link-img img-load" rel="colorbox" data-fancybox="group-1"
                 href="./img/photos/73f7e66a-4448-4bcd-b2f1-fc955ba6d341.webp">
-                <img src="./img/photos/73f7e66a-4448-4bcd-b2f1-fc955ba6d341.webp" alt="Пример проекта" class="box__img">
+                <img data-source="./img/photos/73f7e66a-4448-4bcd-b2f1-fc955ba6d341.webp" src="img/0.png"
+                  alt="Пример проекта" class="box__img">
               </a>
             </li>
             <li class="photos__item">
-              <a class="colorbox photos__link-img" rel="colorbox" data-fancybox="group-1"
+              <a class="colorbox photos__link-img img-load" rel="colorbox" data-fancybox="group-1"
                 href="./img/photos/IMG_1618.webp">
-                <img src="./img/photos/IMG_1618.webp" alt="Пример проекта" class="box__img">
+                <img data-source="./img/photos/IMG_1618.webp" src="img/0.png" alt="Пример проекта" class="box__img">
               </a>
             </li>
             <li class="photos__item">
-              <a class="colorbox photos__link-img" rel="colorbox" data-fancybox="group-1"
+              <a class="colorbox photos__link-img img-load" rel="colorbox" data-fancybox="group-1"
                 href="./img/photos/IMG_9629.webp">
-                <img src="./img/photos/IMG_9629.webp" alt="Пример проекта" class="box__img">
+                <img data-source="./img/photos/IMG_9629.webp" src="img/0.png" alt="Пример проекта" class="box__img">
               </a>
             </li>
             <li class="photos__item">
-              <a class="colorbox photos__link-img" rel="colorbox" data-fancybox="group-1"
+              <a class="colorbox photos__link-img img-load" rel="colorbox" data-fancybox="group-1"
                 href="./img/photos/51d52bfc-3cf5-415d-8f0b-a4a477c1a45e.webp">
-                <img src="./img/photos/51d52bfc-3cf5-415d-8f0b-a4a477c1a45e.webp" alt="Пример проекта" class="box__img">
+                <img data-source="./img/photos/51d52bfc-3cf5-415d-8f0b-a4a477c1a45e.webp" src="img/0.png"
+                  alt="Пример проекта" class="box__img">
               </a>
             </li>
             <li class="photos__item">
-              <a class="colorbox photos__link-img" rel="colorbox" data-fancybox="group-1"
+              <a class="colorbox photos__link-img img-load" rel="colorbox" data-fancybox="group-1"
                 href="./img/photos/3d0c1ad4-e248-421e-b407-f13e082c8f84.webp">
-                <img src="./img/photos/3d0c1ad4-e248-421e-b407-f13e082c8f84.webp" alt="Пример проекта" class="box__img">
+                <img data-source="./img/photos/3d0c1ad4-e248-421e-b407-f13e082c8f84.webp" src="img/0.png"
+                  alt="Пример проекта" class="box__img">
               </a>
             </li>
           </ul>
           <div class="photos__btn photos__btn1">Больше фото</div>
           <ul class="photos__list photos__list_2">
             <li class="photos__item">
-              <a class="colorbox photos__link-img" rel="colorbox" data-fancybox="group-1" href="./img/photos/1.webp">
-                <img src="./img/photos/1.webp" alt="Пример проекта" class="box__img">
+              <a class="colorbox photos__link-img img-load" rel="colorbox" data-fancybox="group-1"
+                href="./img/photos/1.webp">
+                <img data-source="./img/photos/1.webp" src="img/0.png" alt="Пример проекта" class="box__img">
               </a>
             </li>
             <li class="photos__item">
-              <a class="colorbox photos__link-img" rel="colorbox" data-fancybox="group-1" href="./img/photos/2.webp">
-                <img src="./img/photos/2.webp" alt="Пример проекта" class="box__img">
+              <a class="colorbox photos__link-img img-load" rel="colorbox" data-fancybox="group-1"
+                href="./img/photos/2.webp">
+                <img data-source="./img/photos/2.webp" src="img/0.png" alt="Пример проекта" class="box__img">
               </a>
             </li>
             <li class="photos__item">
-              <a class="colorbox photos__link-img" rel="colorbox" data-fancybox="group-1" href="./img/photos/3.webp">
-                <img src="./img/photos/3.webp" alt="Пример проекта" class="box__img">
+              <a class="colorbox photos__link-img img-load" rel="colorbox" data-fancybox="group-1"
+                href="./img/photos/3.webp">
+                <img data-source="./img/photos/3.webp" src="img/0.png" alt="Пример проекта" class="box__img">
               </a>
             </li>
             <li class="photos__item">
-              <a class="colorbox photos__link-img" rel="colorbox" data-fancybox="group-1" href="./img/photos/4.webp">
-                <img src="./img/photos/4.webp" alt="Пример проекта" class="box__img">
+              <a class="colorbox photos__link-img img-load" rel="colorbox" data-fancybox="group-1"
+                href="./img/photos/4.webp">
+                <img data-source="./img/photos/4.webp" src="img/0.png" alt="Пример проекта" class="box__img">
               </a>
             </li>
             <li class="photos__item">
-              <a class="colorbox photos__link-img" rel="colorbox" data-fancybox="group-1" href="./img/photos/5.webp">
-                <img src="./img/photos/5.webp" alt="Пример проекта" class="box__img">
+              <a class="colorbox photos__link-img img-load" rel="colorbox" data-fancybox="group-1"
+                href="./img/photos/5.webp">
+                <img data-source="./img/photos/5.webp" src="img/0.png" alt="Пример проекта" class="box__img">
               </a>
             </li>
             <li class="photos__item">
-              <a class="colorbox photos__link-img" rel="colorbox" data-fancybox="group-1" href="./img/photos/6.webp">
-                <img src="./img/photos/6.webp" alt="Пример проекта" class="box__img">
+              <a class="colorbox photos__link-img img-load" rel="colorbox" data-fancybox="group-1"
+                href="./img/photos/6.webp">
+                <img data-source="./img/photos/6.webp" src="img/0.png" alt="Пример проекта" class="box__img">
               </a>
             </li>
             <li class="photos__item">
-              <a class="colorbox photos__link-img" rel="colorbox" data-fancybox="group-1" href="./img/photos/7.webp">
-                <img src="./img/photos/7.webp" alt="Пример проекта" class="box__img">
+              <a class="colorbox photos__link-img img-load" rel="colorbox" data-fancybox="group-1"
+                href="./img/photos/7.webp">
+                <img data-source="./img/photos/7.webp" src="img/0.png" alt="Пример проекта" class="box__img">
               </a>
             </li>
             <li class="photos__item">
-              <a class="colorbox photos__link-img" rel="colorbox" data-fancybox="group-1" href="./img/photos/8.webp">
-                <img src="./img/photos/8.webp" alt="Пример проекта" class="box__img">
+              <a class="colorbox photos__link-img img-load" rel="colorbox" data-fancybox="group-1"
+                href="./img/photos/8.webp">
+                <img data-source="./img/photos/8.webp" src="img/0.png" alt="Пример проекта" class="box__img">
               </a>
             </li>
             <li class="photos__item">
-              <a class="colorbox photos__link-img" rel="colorbox" data-fancybox="group-1" href="./img/photos/9.webp">
-                <img src="./img/photos/9.webp" alt="Пример проекта" class="box__img">
+              <a class="colorbox photos__link-img img-load" rel="colorbox" data-fancybox="group-1"
+                href="./img/photos/9.webp">
+                <img data-source="./img/photos/9.webp" src="img/0.png" alt="Пример проекта" class="box__img">
               </a>
             </li>
             <li class="photos__item">
-              <a class="colorbox photos__link-img" rel="colorbox" data-fancybox="group-1" href="./img/photos/10.webp">
-                <img src="./img/photos/10.webp" alt="Пример проекта" class="box__img">
+              <a class="colorbox photos__link-img img-load" rel="colorbox" data-fancybox="group-1"
+                href="./img/photos/10.webp">
+                <img data-source="./img/photos/10.webp" src="img/0.png" alt="Пример проекта" class="box__img">
               </a>
             </li>
             <li class="photos__item">
-              <a class="colorbox photos__link-img" rel="colorbox" data-fancybox="group-1" href="./img/photos/11.webp">
-                <img src="./img/photos/11.webp" alt="Пример проекта" class="box__img">
+              <a class="colorbox photos__link-img img-load" rel="colorbox" data-fancybox="group-1"
+                href="./img/photos/11.webp">
+                <img data-source="./img/photos/11.webp" src="img/0.png" alt="Пример проекта" class="box__img">
               </a>
             </li>
             <li class="photos__item">
-              <a class="colorbox photos__link-img" rel="colorbox" data-fancybox="group-1" href="./img/photos/12.webp">
-                <img src="./img/photos/12.webp" alt="Пример проекта" class="box__img">
+              <a class="colorbox photos__link-img img-load" rel="colorbox" data-fancybox="group-1"
+                href="./img/photos/12.webp">
+                <img data-source="./img/photos/12.webp" src="img/0.png" alt="Пример проекта" class="box__img">
               </a>
             </li>
             <li class="photos__item">
-              <a class="colorbox photos__link-img" rel="colorbox" data-fancybox="group-1" href="./img/photos/13.webp">
-                <img src="./img/photos/13.webp" alt="Пример проекта" class="box__img">
+              <a class="colorbox photos__link-img img-load" rel="colorbox" data-fancybox="group-1"
+                href="./img/photos/13.webp">
+                <img data-source="./img/photos/13.webp" src="img/0.png" alt="Пример проекта" class="box__img">
               </a>
             </li>
             <li class="photos__item">
-              <a class="colorbox photos__link-img" rel="colorbox" data-fancybox="group-1" href="./img/photos/14.webp">
-                <img src="./img/photos/14.webp" alt="Пример проекта" class="box__img">
+              <a class="colorbox photos__link-img img-load" rel="colorbox" data-fancybox="group-1"
+                href="./img/photos/14.webp">
+                <img data-source="./img/photos/14.webp" src="img/0.png" alt="Пример проекта" class="box__img">
               </a>
             </li>
             <li class="photos__item">
-              <a class="colorbox photos__link-img" rel="colorbox" data-fancybox="group-1" href="./img/photos/15.webp">
-                <img src="./img/photos/15.webp" alt="Пример проекта" class="box__img">
+              <a class="colorbox photos__link-img img-load" rel="colorbox" data-fancybox="group-1"
+                href="./img/photos/15.webp">
+                <img data-source="./img/photos/15.webp" src="img/0.png" alt="Пример проекта" class="box__img">
               </a>
             </li>
             <li class="photos__item">
-              <a class="colorbox photos__link-img" rel="colorbox" data-fancybox="group-1" href="./img/photos/16.webp">
-                <img src="./img/photos/16.webp" alt="Пример проекта" class="box__img">
+              <a class="colorbox photos__link-img img-load" rel="colorbox" data-fancybox="group-1"
+                href="./img/photos/16.webp">
+                <img data-source="./img/photos/16.webp" src="img/0.png" alt="Пример проекта" class="box__img">
               </a>
             </li>
             <div class="photos__btn photos__btn2">Скрыть фото</div>
@@ -1895,10 +1936,10 @@
             <a href="https://t.me/webRvlad" class="footer__address">WebR</a>
             <br>
             <a href="https://t.me/webRvlad" class="footer__link">
-              <img src="./img/telegram.svg" alt="Связь со мной" width="27px" height="27px">
+              <img src="./img/Telegram.svg" width="27px" height="27px">
             </a>
             <a href="https://vk.com/vladislavpivovarov" class="footer__link">
-              <img src="./img/vk.svg" alt="Связь со мной" width="27px" height="27px">
+              <img src="./img/vk.svg" width="27px" height="27px">
             </a>
           </div>
 

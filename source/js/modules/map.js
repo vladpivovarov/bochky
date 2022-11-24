@@ -1,5 +1,5 @@
 const mapRealize = () => {
-  console.log("Map");
+
   // CONTACT VARIABLES
   const contactAddress = document.querySelector(".contact__address");
   var placemarkSize = {
@@ -52,6 +52,18 @@ const mapRealize = () => {
       });
 
       myMap.geoObjects.add(placemark);
+
+      function retuz() {
+        setTimeout(() => {
+          ready();
+        }, 1500);
+      }
+
+      window.addEventListener("resize", () => {
+        myMap.destroy();
+        console.log("aaaaa");
+        setTimeout(retuz, 1500);
+      })
     }
 
     // Ищем и удаляем мусор с карты (кроме логотипа и копирайта)

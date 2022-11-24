@@ -30,7 +30,7 @@
   }
 
   @media (max-width: $mobile) {
-    padding-top: 60px;
+    padding-top: 80px;
   }
 }
 
@@ -340,4 +340,13 @@
     bottom: calc(65px + 22px);
     right: calc(50px + 22px);
   }
+}
+
+// Подзагрузка img
+
+.img-load {
+  background-image: url("../img/loading.gif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 40px;
 }

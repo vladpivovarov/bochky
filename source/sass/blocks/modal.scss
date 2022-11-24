@@ -24,7 +24,7 @@
   position: relative;
   flex-basis: 700px;
   border-radius: 15px;
-  padding: 60px 60px;
+  padding: 40px 40px;
   box-shadow: 5px 5px 10px rgba(#000, .5);
   background-color: #fff;
   color: #272727;
@@ -166,14 +166,13 @@
 
 .modal_shit {
 
-  transform: scale(0.8);
-
   .modal__inner {
-    padding: 40px 50px;
+    padding: 20px 30px;
     background-image: url("../img/magazine-big.webp");
     background-repeat: no-repeat;
     background-position: bottom -220px left -50px;
     background-size: 180% auto;
+    transform: scale(0.9);
   }
 
   .quiz__result-inner {
@@ -197,7 +196,7 @@
     text-align: left;
     font-weight: 600;
     line-height: 1;
-    font-size: 3.25rem;
+    font-size: 3.1rem;
   }
 }
 

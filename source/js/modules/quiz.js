@@ -11,6 +11,7 @@ const quiz = () => {
   const statusGift1 = quizBlock.querySelector(".quiz__gift-status_1");
   const statusGift2 = quizBlock.querySelector(".quiz__gift-status_2");
   const statusGift3 = quizBlock.querySelector(".quiz__gift-status_3");
+  const top = document.querySelector(".top");
 
   const textMain = "Пройдите этот тест и я лично для Вас рассчитаю стоимость";
   const textFinish = "Отлично! Я приступаю к расчету стоимости!";
@@ -24,6 +25,14 @@ const quiz = () => {
   const textGift3Finish = "выбран";
 
   let current = 0;
+
+  function toTop() {
+    seamless.scrollIntoView(top, {
+      behavior: "smooth",
+      block: "start",
+      inline: "center",
+    });
+  }
 
 
   // Первоначальная настройка
@@ -45,6 +54,9 @@ const quiz = () => {
   // Вперед
   nextBtn.addEventListener("click", (event) => {
     event.preventDefault();
+
+    toTop();
+
     if (current >= (questionsArray.length - 1)) {
       return;
     }
