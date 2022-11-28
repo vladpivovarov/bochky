@@ -7,7 +7,6 @@ import date from "./modules/date";
 import up from "./modules/up";
 import scroll from "./modules/scroll";
 import air from "./modules/air";
-import fixedMenu from "./modules/fixedMenu";
 import menu from "./modules/menu";
 import quiz from "./modules/quiz";
 import mask from "./modules/mask";
@@ -19,7 +18,19 @@ import shit from "./modules/shit";
 import stick from "./modules/stick";
 import photos from "./modules/photos";
 import lazy from "./modules/lazy";
+import preload from "./modules/preload";
+import formQuiz from "./modules/formQuiz";
+import formShit from "./modules/formShit";
+import formCall from "./modules/formCall";
+import formExhibition from "./modules/formExhibition";
+import formReady from "./modules/formReady";
+import formPrice from "./modules/formPrice";
 
+try {
+  preload();
+} catch (error) {
+  console.log(error);
+}
 
 try {
   checkJs();
@@ -71,12 +82,6 @@ try {
 
 try {
   air();
-} catch (error) {
-  console.log(error);
-}
-
-try {
-  fixedMenu();
 } catch (error) {
   console.log(error);
 }
@@ -143,6 +148,42 @@ try {
 
 try {
   lazy();
+} catch (error) {
+  console.log(error);
+}
+
+try {
+  formQuiz();
+} catch (error) {
+  console.log(error);
+}
+
+try {
+  formShit();
+} catch (error) {
+  console.log(error);
+}
+
+try {
+  formCall();
+} catch (error) {
+  console.log(error);
+}
+
+try {
+  formExhibition();
+} catch (error) {
+  console.log(error);
+}
+
+try {
+  formReady();
+} catch (error) {
+  console.log(error);
+}
+
+try {
+  formPrice();
 } catch (error) {
   console.log(error);
 }

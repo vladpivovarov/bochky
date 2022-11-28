@@ -16,21 +16,24 @@ const videol = () => {
     // Подключаем видео плагин
     const player1 = videojs('my-video1', options, function onPlayerReady() {
       const video = this;
-
-      //Подмена src на кнопках
-      let src = video.getAttribute("data-src");
-      let srcImg = "//img.youtube.com/vi/" + src + "/mqdefault.jpg";
-      let parentBtn = btn.parentNode;
-      let img = parentBtn.querySelector("img");
-      img.setAttribute("src", srcImg);
+      const wrap = modal.querySelector(".my-video1-dimensions");
+      wrap.classList.add("vjs-fluid");
 
       // При клике на одну из кнопок отображаем модальное окно
-      btn.addEventListener("click", (e) => {
-        e.preventDefault();
+      if (video.isReady_) {
 
-        modal.classList.add("modal-video_active");
-        video.play();
-      });
+        btn.addEventListener("click", (e) => {
+          e.preventDefault();
+          modal.classList.add("modal-video_load");
+          setTimeout(go, 1000);
+
+          function go() {
+            modal.classList.remove("modal-video_load");
+            modal.classList.add("modal-video_active");
+            video.play();
+          }
+        });
+      }
 
       modal.addEventListener("click", (event) => {
         const clickedElementsTree = event.composedPath();
@@ -40,6 +43,7 @@ const videol = () => {
         } else {
           modal.classList.remove("modal-video_active");
           video.pause();
+          video.currentTime(0);
         }
       })
 
@@ -51,6 +55,7 @@ const videol = () => {
         }
 
         video.pause();
+        video.currentTime(0);
       })
     });
   }
@@ -65,20 +70,25 @@ const videol = () => {
     // Подключаем видео плагин
     const player2 = videojs('my-video2', options, function onPlayerReady() {
       const video = this;
-
-      //Подмена src на кнопках
-      let src = video.getAttribute("data-src");
-      let srcImg = "//img.youtube.com/vi/" + src + "/mqdefault.jpg";
-      let parentBtn = btn.parentNode;
-      let img = parentBtn.querySelector("img");
-      img.setAttribute("src", srcImg);
+      const wrap = modal.querySelector(".my-video2-dimensions");
+      wrap.classList.add("vjs-fluid");
 
       // При клике на одну из кнопок отображаем модальное окно
-      btn.addEventListener("click", (e) => {
-        e.preventDefault();
-        modal.classList.add("modal-video_active");
-        video.play();
-      });
+      if (video.isReady_) {
+
+
+        btn.addEventListener("click", (e) => {
+          e.preventDefault();
+          modal.classList.add("modal-video_load");
+          setTimeout(go, 1000);
+
+          function go() {
+            modal.classList.remove("modal-video_load");
+            modal.classList.add("modal-video_active");
+            video.play();
+          }
+        });
+      }
 
       modal.addEventListener("click", (event) => {
         const clickedElementsTree = event.composedPath();
@@ -88,6 +98,7 @@ const videol = () => {
         } else {
           modal.classList.remove("modal-video_active");
           video.pause();
+          video.currentTime(0);
         }
       })
 
@@ -99,6 +110,7 @@ const videol = () => {
         }
 
         video.pause();
+        video.currentTime(0);
       })
     });
   }
@@ -113,20 +125,26 @@ const videol = () => {
     // Подключаем видео плагин
     const player3 = videojs('my-video3', options, function onPlayerReady() {
       const video = this;
-
-      //Подмена src на кнопках
-      let src = video.getAttribute("data-src");
-      let srcImg = "//img.youtube.com/vi/" + src + "/mqdefault.jpg";
-      let parentBtn = btn.parentNode;
-      let img = parentBtn.querySelector("img");
-      img.setAttribute("src", srcImg);
+      const wrap = modal.querySelector(".my-video3-dimensions");
+      wrap.classList.add("vjs-fluid");
 
       // При клике на одну из кнопок отображаем модальное окно
-      btn.addEventListener("click", (e) => {
-        e.preventDefault();
-        modal.classList.add("modal-video_active");
-        video.play();
-      });
+      if (video.isReady_) {
+
+
+
+        btn.addEventListener("click", (e) => {
+          e.preventDefault();
+          modal.classList.add("modal-video_load");
+          setTimeout(go, 1000);
+
+          function go() {
+            modal.classList.remove("modal-video_load");
+            modal.classList.add("modal-video_active");
+            video.play();
+          }
+        });
+      }
 
       modal.addEventListener("click", (event) => {
         const clickedElementsTree = event.composedPath();
@@ -136,6 +154,7 @@ const videol = () => {
         } else {
           modal.classList.remove("modal-video_active");
           video.pause();
+          video.currentTime(0);
         }
       })
 
@@ -147,6 +166,7 @@ const videol = () => {
         }
 
         video.pause();
+        video.currentTime(0);
       })
     });
   }
@@ -161,20 +181,25 @@ const videol = () => {
     // Подключаем видео плагин
     const player4 = videojs('my-video4', options, function onPlayerReady() {
       const video = this;
-
-      //Подмена src на кнопках
-      let src = video.getAttribute("data-src");
-      let srcImg = "//img.youtube.com/vi/" + src + "/mqdefault.jpg";
-      let parentBtn = btn.parentNode;
-      let img = parentBtn.querySelector("img");
-      img.setAttribute("src", srcImg);
+      const wrap = modal.querySelector(".my-video4-dimensions");
+      wrap.classList.add("vjs-fluid");
 
       // При клике на одну из кнопок отображаем модальное окно
-      btn.addEventListener("click", (e) => {
-        e.preventDefault();
-        modal.classList.add("modal-video_active");
-        video.play();
-      });
+      if (video.isReady_) {
+
+
+        btn.addEventListener("click", (e) => {
+          e.preventDefault();
+          modal.classList.add("modal-video_load");
+          setTimeout(go, 1000);
+
+          function go() {
+            modal.classList.remove("modal-video_load");
+            modal.classList.add("modal-video_active");
+            video.play();
+          }
+        });
+      }
 
       modal.addEventListener("click", (event) => {
         const clickedElementsTree = event.composedPath();
@@ -184,6 +209,7 @@ const videol = () => {
         } else {
           modal.classList.remove("modal-video_active");
           video.pause();
+          video.currentTime(0);
         }
       })
 
@@ -195,6 +221,7 @@ const videol = () => {
         }
 
         video.pause();
+        video.currentTime(0);
       })
     });
   }
@@ -209,20 +236,25 @@ const videol = () => {
     // Подключаем видео плагин
     const player5 = videojs('my-video5', options, function onPlayerReady() {
       const video = this;
-
-      //Подмена src на кнопках
-      let src = video.getAttribute("data-src");
-      let srcImg = "//img.youtube.com/vi/" + src + "/mqdefault.jpg";
-      let parentBtn = btn.parentNode;
-      let img = parentBtn.querySelector("img");
-      img.setAttribute("src", srcImg);
+      const wrap = modal.querySelector(".my-video5-dimensions");
+      wrap.classList.add("vjs-fluid");
 
       // При клике на одну из кнопок отображаем модальное окно
-      btn.addEventListener("click", (e) => {
-        e.preventDefault();
-        modal.classList.add("modal-video_active");
-        video.play();
-      });
+      if (video.isReady_) {
+
+
+        btn.addEventListener("click", (e) => {
+          e.preventDefault();
+          modal.classList.add("modal-video_load");
+          setTimeout(go, 1000);
+
+          function go() {
+            modal.classList.remove("modal-video_load");
+            modal.classList.add("modal-video_active");
+            video.play();
+          }
+        });
+      }
 
       modal.addEventListener("click", (event) => {
         const clickedElementsTree = event.composedPath();
@@ -232,6 +264,7 @@ const videol = () => {
         } else {
           modal.classList.remove("modal-video_active");
           video.pause();
+          video.currentTime(0);
         }
       })
 
@@ -243,6 +276,7 @@ const videol = () => {
         }
 
         video.pause();
+        video.currentTime(0);
       })
     });
   }
@@ -257,20 +291,25 @@ const videol = () => {
     // Подключаем видео плагин
     const player6 = videojs('my-video6', options, function onPlayerReady() {
       const video = this;
-
-      //Подмена src на кнопках
-      let src = video.getAttribute("data-src");
-      let srcImg = "//img.youtube.com/vi/" + src + "/mqdefault.jpg";
-      let parentBtn = btn.parentNode;
-      let img = parentBtn.querySelector("img");
-      img.setAttribute("src", srcImg);
+      const wrap = modal.querySelector(".my-video6-dimensions");
+      wrap.classList.add("vjs-fluid");
 
       // При клике на одну из кнопок отображаем модальное окно
-      btn.addEventListener("click", (e) => {
-        e.preventDefault();
-        modal.classList.add("modal-video_active");
-        video.play();
-      });
+      if (video.isReady_) {
+
+
+        btn.addEventListener("click", (e) => {
+          e.preventDefault();
+          modal.classList.add("modal-video_load");
+          setTimeout(go, 1000);
+
+          function go() {
+            modal.classList.remove("modal-video_load");
+            modal.classList.add("modal-video_active");
+            video.play();
+          }
+        });
+      }
 
       modal.addEventListener("click", (event) => {
         const clickedElementsTree = event.composedPath();
@@ -280,6 +319,7 @@ const videol = () => {
         } else {
           modal.classList.remove("modal-video_active");
           video.pause();
+          video.currentTime(0);
         }
       })
 
@@ -291,6 +331,7 @@ const videol = () => {
         }
 
         video.pause();
+        video.currentTime(0);
       })
     });
   }

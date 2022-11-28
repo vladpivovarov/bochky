@@ -1,6 +1,5 @@
 const lazy = () => {
 
-
   // Универсальный скрипт - для подгрузки изображений в html
   // Вставьте data атрибут data-source вместо src. А в src подменную прозрачную картинку
   // Подробнее в видео вк
@@ -12,7 +11,7 @@ const lazy = () => {
   if (lazyImages.length > 0) {
     lazyImages.forEach(img => {
       if (img.dataset.source) {
-        lazyImagesPositions.push(img.getBoundingClientRect().top + pageYOffset);
+        lazyImagesPositions.push(img.getBoundingClientRect().top + pageYOffset - 1000);
         lazyScrollCheck();
       }
     })
@@ -20,10 +19,6 @@ const lazy = () => {
 
   // При скролле
   window.addEventListener("scroll", lazyScroll);
-
-  // При изменении содержимого тегов
-  document.querySelector(".quiz__right").addEventListener("DOMSubtreeModified", lazyScroll);
-
 
   function lazyScroll() {
     if (document.querySelectorAll("img[data-source]").length > 0) {

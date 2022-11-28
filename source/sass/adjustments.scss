@@ -199,3 +199,12 @@ img {
     background-color: yellow;
   }
 }
+
+// Подзагрузка img
+
+.img-load {
+  background-image: url("../img/loading.gif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 40px;
+}

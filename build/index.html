@@ -28,7 +28,13 @@
 </head>
 
 <body>
-  <div class="wrapper">
+  <div class="wrapper loading">
+    <div class="loader">
+      <div class="loader1"></div>
+      <div class="loader__desc">
+        Bochky®
+      </div>
+    </div>
     <div class="page">
       <section class="hero">
         <div class="hero__container container">
@@ -64,13 +70,14 @@
                   </div>
                   <ul class="socials__list">
                     <li class="socials__item">
-                      <a href="#" class="socials__link socials__link_vb"></a>
+                      <a href="viber://chat?number=%2B79104264159" class="socials__link socials__link_vb"></a>
                     </li>
                     <li class="socials__item">
-                      <a href="#" class="socials__link socials__link_wt"></a>
+                      <a href="https://wa.me/79104264159?text=Здравствуйте%2C+у+меня+к+вам+вопрос!" target="_blank"
+                        class="socials__link socials__link_wt"></a>
                     </li>
                     <li class="socials__item">
-                      <a href="#" class="socials__link socials__link_tg"></a>
+                      <a href="https://t.me/+79104264159" target="_blank" class="socials__link socials__link_tg"></a>
                     </li>
                   </ul>
                 </div>
@@ -124,9 +131,7 @@
             <ul class="hero__list">
               <li class="hero__item">
                 <div class="hero__icon">
-                  <svg class="hero__icon-img" width="10px" height="10px">
-                    <use xlink:href="./img/sprite-svg/sprite.svg#icon-done"></use>
-                  </svg>
+                  <img src="img/icon-done.png" class="hero__icon-img" width="10px" height="10px">
                 </div>
                 <div class="hero__mini-desc">
                   Крупнейший производитель
@@ -135,9 +140,7 @@
               </li>
               <li class="hero__item">
                 <div class="hero__icon">
-                  <svg class="hero__icon-img" width="10px" height="10px">
-                    <use xlink:href="./img/sprite-svg/sprite.svg#icon-done"></use>
-                  </svg>
+                  <img src="img/icon-done.png" class="hero__icon-img" width="10px" height="10px">
                 </div>
                 <div class="hero__mini-desc">
                   <strong>Экспортное качество</strong>
@@ -146,9 +149,7 @@
               </li>
               <li class="hero__item">
                 <div class="hero__icon">
-                  <svg class="hero__icon-img" width="10px" height="10px">
-                    <use xlink:href="./img/sprite-svg/sprite.svg#icon-done"></use>
-                  </svg>
+                  <img src="img/icon-done.png" class="hero__icon-img" width="10px" height="10px">
                 </div>
                 <div class="hero__mini-desc">
                   12 лет на рынке и
@@ -166,9 +167,7 @@
             </div>
             <div class="hero__play">
               <button class="hero__play-link video-link">
-                <svg class="reviews__icon" width="18px" height="18px">
-                  <use xlink:href="./img/sprite-svg/sprite.svg#icon-play"></use>
-                </svg>
+                <img src="img/icon-play.png" class="reviews__icon" width="18px" height="18px">
               </button>
             </div>
           </div>
@@ -186,8 +185,8 @@
           </div>
           <ul class="quiz-wrap__list">
             <li class="quiz-wrap__item">
-              <div class="quiz-wrap__img-block img-load">
-                <img data-source="./img/tablet.webp" src="./img/0.png" class="quiz-wrap__img quiz-wrap__img_1">
+              <div class="quiz-wrap__img-block">
+                <img src="./img/tablet.webp" class="quiz-wrap__img quiz-wrap__img_1">
               </div>
               <div class="quiz-wrap__desc">
                 <strong>Расчет стоимости</strong>
@@ -196,8 +195,8 @@
               </div>
             </li>
             <li class="quiz-wrap__item">
-              <div class="quiz-wrap__img-block img-load">
-                <img data-source="./img/magazine-circle.webp" src="./img/0.png" class="quiz-wrap__img quiz-wrap__img_2">
+              <div class="quiz-wrap__img-block">
+                <img src="./img/magazine-circle.webp" class="quiz-wrap__img quiz-wrap__img_2">
               </div>
               <div class="quiz-wrap__desc">
                 <strong>"17 рекомендаций
@@ -208,8 +207,8 @@
               </div>
             </li>
             <li class="quiz-wrap__item">
-              <div class="quiz-wrap__img-block img-load">
-                <img data-source="./img/Giftbox.webp" src="./img/0.png" class="quiz-wrap__img quiz-wrap__img_3">
+              <div class="quiz-wrap__img-block">
+                <img src="./img/Giftbox.webp" class="quiz-wrap__img quiz-wrap__img_3">
               </div>
               <div class="quiz-wrap__desc">
                 <strong>Два подарка</strong>
@@ -219,10 +218,10 @@
                 на
                 <strong class="color"> 14 000р.</strong>
               </div>
-              <div class="top visually-hidden"></div>
             </li>
           </ul>
-          <form class="quiz">
+          <form class="quiz form-quiz">
+            <div class="top"></div>
             <aside class="quiz__left">
               <div class="quiz__author">
                 <div class="quiz__author-image-block">
@@ -304,9 +303,8 @@
                   <li class="quiz__variant">
                     <label class="quiz__label">
                       <input type="radio" value="standart" name="type" class="quiz__input visually-hidden">
-                      <div class="quiz__variant-inner img-load">
-                        <img src="./img/0.png" data-source="./img/баня-бочка.webp" alt="Баня-бочка от 133т.р."
-                          class="quiz__variant-img">
+                      <div class="quiz__variant-inner">
+                        <img src="./img/баня-бочка.webp" alt="Баня-бочка от 133т.р." class="quiz__variant-img">
                       </div>
                       <div class="quiz__variant-desc">
                         Баня-бочка от 133т.р.
@@ -316,9 +314,8 @@
                   <li class="quiz__variant">
                     <label class="quiz__label">
                       <input type="radio" value="quadro-oval" name="type" class="quiz__input visually-hidden">
-                      <div class="quiz__variant-inner img-load">
-                        <img data-source="./img/Квадро-овал.webp" src="img/0.png" alt="Квадро-овал бочка от 372т.р."
-                          class="quiz__variant-img">
+                      <div class="quiz__variant-inner">
+                        <img src="./img/Квадро-овал.webp" alt="Квадро-овал бочка от 372т.р." class="quiz__variant-img">
                       </div>
                       <div class="quiz__variant-desc">
                         Квадро-овал бочка от 372т.р.
@@ -328,9 +325,8 @@
                   <li class="quiz__variant">
                     <label class="quiz__label">
                       <input type="radio" value="quadro" name="type" class="quiz__input visually-hidden">
-                      <div class="quiz__variant-inner img-load">
-                        <img data-source="./img/Квадро.webp" src="img/0.png" alt="Квадро-бочка от 171т.р."
-                          class="quiz__variant-img">
+                      <div class="quiz__variant-inner">
+                        <img src="./img/Квадро.webp" alt="Квадро-бочка от 171т.р." class="quiz__variant-img">
                       </div>
                       <div class="quiz__variant-desc">
                         Квадро-бочка от 171т.р.
@@ -340,9 +336,8 @@
                   <li class="quiz__variant">
                     <label class="quiz__label">
                       <input type="radio" value="oval" name="type" class="quiz__input visually-hidden">
-                      <div class="quiz__variant-inner img-load">
-                        <img data-source="./img/Овал.webp" src="img/0.png" alt="Овал-бочка от 339т.р."
-                          class="quiz__variant-img">
+                      <div class="quiz__variant-inner">
+                        <img src="./img/Овал.webp" alt="Овал-бочка от 339т.р." class="quiz__variant-img">
                       </div>
                       <div class="quiz__variant-desc">
                         Овал-бочка от 339т.р.
@@ -352,9 +347,8 @@
                   <li class="quiz__variant">
                     <label class="quiz__label">
                       <input type="radio" value="okta" name="type" class="quiz__input visually-hidden">
-                      <div class="quiz__variant-inner img-load">
-                        <img data-source="./img/Окта.webp" src="img/0.png" alt="Окта-бочка от 169т.р."
-                          class="quiz__variant-img">
+                      <div class="quiz__variant-inner">
+                        <img src="./img/Окта.webp" alt="Окта-бочка от 169т.р." class="quiz__variant-img">
                       </div>
                       <div class="quiz__variant-desc">
                         Окта-бочка от 169т.р.
@@ -677,6 +671,7 @@
               <div class="quiz__button-block">
                 <button class="quiz__prev">Назад</button>
                 <button class="quiz__next btn">Следующий вопрос</button>
+                <button type="submit" class="quiz__send btn">Получить расчет</button>
               </div>
               <div class="personal quiz__personal visually-hidden">
                 Нажимая на кнопку "Получить расчет" Вы соглашаетесь с
@@ -705,8 +700,8 @@
         </div>
         <div class="advantages__body">
           <div class="container advantages__container">
-            <div class="advantages__img-block img-load">
-              <img data-source="./img/4.webp" src="img/0.png" alt="Наша баня-бочка" class="advantages__img">
+            <div class="advantages__img-block">
+              <img src="./img/4.webp" alt="Наша баня-бочка" class="advantages__img">
               <ul class="advantages__mega-list">
                 <li class="advantages__mega-item">
                   <div class="advantages__mega-icon advantages__mega-icon_fund">
@@ -821,7 +816,7 @@
               </div>
             </div>
           </h2>
-          <form action="" class="price__form">
+          <form action="" class="price__form form-price">
             <h3 class="price__form-title">
               Куда прислать прайс?
             </h3>
@@ -883,7 +878,7 @@
                   placeholder="*Ваш телефон">
               </div>
             </div>
-            <button class="btn price__btn">Скачать прайс-каталог</button>
+            <button type="submit" class="btn price__btn">Скачать прайс-каталог</button>
             <div class="personal">
               Нажимая на кнопку "Скачать прайс-каталог" Вы соглашаетесь с
               <a href="./privacy.html" target="_blank">условиями обработки персональных данных</a>
@@ -903,18 +898,16 @@
           </h2>
           <ul class="want__list">
             <li class="want__item">
-              <div class="want__img-block img-load">
-                <img data-source="./img/exhibition.webp" src="img/0.png" alt="Наша выставка" class="want__img"
-                  width="300px">
+              <div class="want__img-block">
+                <img src="./img/exhibition.webp" alt="Наша выставка" class="want__img" width="300px">
               </div>
               <div class="want__desc">
                 Приглашаем посетить выставку и посмотреть представленные образцы вживую
               </div>
             </li>
             <li class="want__item">
-              <div class="want__img-block img-load">
-                <img data-source="./img/contract.webp" src="img/0.png" alt="Заключаем договор" class="want__img"
-                  width="300px">
+              <div class="want__img-block">
+                <img src="./img/contract.webp" alt="Заключаем договор" class="want__img" width="300px">
               </div>
               <div class="want__desc">
                 Выбираем модель и комплектацию, обговариваем сроки и заключаем договор, вы вносите предоплату за первую
@@ -922,17 +915,16 @@
               </div>
             </li>
             <li class="want__item">
-              <div class="want__img-block img-load">
-                <img data-source="./img/delivery.webp" src="img/0.png" alt="Доставляем бочку-баню" class="want__img"
-                  width="300px">
+              <div class="want__img-block">
+                <img src="./img/delivery.webp" alt="Доставляем бочку-баню" class="want__img" width="300px">
               </div>
               <div class="want__desc">
                 Доставляем бочку-баню на ваш участок и устанавливаем
               </div>
             </li>
             <li class="want__item">
-              <div class="want__img-block img-load">
-                <img data-source="./img/yess.png" src="img/0.png" alt="Баня готова" class="want__img" width="300px">
+              <div class="want__img-block">
+                <img src="./img/yess.png" alt="Баня готова" class="want__img" width="300px">
               </div>
               <div class="want__desc">
                 Баня готова, можно париться!
@@ -957,29 +949,28 @@
               <article class="slider-portfolio__screen">
                 <div class="slider-portfolio__inner">
                   <div class="slider-portfolio__left">
-                    <div class="slider-portfolio__img-block img-load">
-                      <img data-source="./img/slider-portfolio/1.webp" src="img/0.png" alt=""
-                        class="slider-portfolio__img">
+                    <div class="slider-portfolio__img-block">
+                      <img src="./img/slider-portfolio/1.webp" class="slider-portfolio__img">
                       <ul class="slider-portfolio__mini-list">
                         <div class="slider-portfolio__mini-desc">Еще фото</div>
                         <li class="slider-portfolio__mini-item">
-                          <a class="colorbox slider-portfolio__mini-link img-load" rel="colorbox"
-                            data-fancybox="group-1" href="./img/slider-portfolio/2.jpg">
-                            <img data-source="./img/slider-portfolio/2.jpg" src="img/0.png" alt="Пример проекта"
+                          <a class="colorbox slider-portfolio__mini-link" rel="colorbox" data-fancybox="group-1"
+                            href="./img/slider-portfolio/2.jpg">
+                            <img src="./img/slider-portfolio/2.jpg" alt="Пример проекта"
                               class="slider-portfolio__mini-img">
                           </a>
                         </li>
                         <li class="slider-portfolio__mini-item">
-                          <a class="colorbox slider-portfolio__mini-link img-load" rel="colorbox"
-                            data-fancybox="group-1" href="./img/slider-portfolio/3.jpg">
-                            <img data-source="./img/slider-portfolio/3.jpg" src="img/0.png" alt="Пример проекта"
+                          <a class="colorbox slider-portfolio__mini-link" rel="colorbox" data-fancybox="group-1"
+                            href="./img/slider-portfolio/3.jpg">
+                            <img src="./img/slider-portfolio/3.jpg" alt="Пример проекта"
                               class="slider-portfolio__mini-img">
                           </a>
                         </li>
                         <li class="slider-portfolio__mini-item">
-                          <a class="colorbox slider-portfolio__mini-link img-load" rel="colorbox"
-                            data-fancybox="group-1" href="./img/slider-portfolio/4.jpg">
-                            <img data-source="./img/slider-portfolio/4.jpg" src="img/0.png" alt="Пример проекта"
+                          <a class="colorbox slider-portfolio__mini-link" rel="colorbox" data-fancybox="group-1"
+                            href="./img/slider-portfolio/4.jpg">
+                            <img src="./img/slider-portfolio/4.jpg" alt="Пример проекта"
                               class="slider-portfolio__mini-img">
                           </a>
                         </li>
@@ -999,25 +990,21 @@
                         </div>
                       </div>
                       <div class="slider-portfolio__location-text">
-                        Краснодар
+                        ст. Смоленская
                       </div>
                     </div>
                     <ul class="slider-portfolio__sizes-list">
                       <li class="slider-portfolio__sizes-item">
                         <div class="slider-portfolio__sizes-title">Длина</div>
-                        <div class="slider-portfolio__sizes-value">3.1 м</div>
+                        <div class="slider-portfolio__sizes-value">3.3 м</div>
                       </li>
                       <li class="slider-portfolio__sizes-item">
                         <div class="slider-portfolio__sizes-title">Ширина</div>
-                        <div class="slider-portfolio__sizes-value">1.1 м</div>
+                        <div class="slider-portfolio__sizes-value">2 м</div>
                       </li>
                       <li class="slider-portfolio__sizes-item">
                         <div class="slider-portfolio__sizes-title">Высота</div>
-                        <div class="slider-portfolio__sizes-value">2.1 м</div>
-                      </li>
-                      <li class="slider-portfolio__sizes-item">
-                        <div class="slider-portfolio__sizes-title">Кол-во секций</div>
-                        <div class="slider-portfolio__sizes-value">1</div>
+                        <div class="slider-portfolio__sizes-value">2 м</div>
                       </li>
                     </ul>
                     <div class="slider-portfolio__do-block">
@@ -1025,9 +1012,6 @@
                       <ul class="slider-portfolio__do-list">
                         <li class="slider-portfolio__do-item">
                           - Привезли на участок
-                        </li>
-                        <li class="slider-portfolio__do-item">
-                          - Подготовили основание
                         </li>
                         <li class="slider-portfolio__do-item">
                           - Собрали
@@ -1093,7 +1077,7 @@
                         </div>
                       </div>
                       <div class="slider-portfolio__location-text">
-                        Краснодар
+                        г. Горячий ключ
                       </div>
                     </div>
                     <ul class="slider-portfolio__sizes-list">
@@ -1103,15 +1087,11 @@
                       </li>
                       <li class="slider-portfolio__sizes-item">
                         <div class="slider-portfolio__sizes-title">Ширина</div>
-                        <div class="slider-portfolio__sizes-value">3.2 м</div>
+                        <div class="slider-portfolio__sizes-value">4 м</div>
                       </li>
                       <li class="slider-portfolio__sizes-item">
                         <div class="slider-portfolio__sizes-title">Высота</div>
-                        <div class="slider-portfolio__sizes-value">2.3 м</div>
-                      </li>
-                      <li class="slider-portfolio__sizes-item">
-                        <div class="slider-portfolio__sizes-title">Кол-во секций</div>
-                        <div class="slider-portfolio__sizes-value">3</div>
+                        <div class="slider-portfolio__sizes-value">2.5 м</div>
                       </li>
                     </ul>
                     <div class="slider-portfolio__do-block">
@@ -1187,38 +1167,34 @@
                         </div>
                       </div>
                       <div class="slider-portfolio__location-text">
-                        Краснодар
+                        г. Волгодонск
                       </div>
                     </div>
                     <ul class="slider-portfolio__sizes-list">
                       <li class="slider-portfolio__sizes-item">
                         <div class="slider-portfolio__sizes-title">Длина</div>
-                        <div class="slider-portfolio__sizes-value">3.3 м</div>
+                        <div class="slider-portfolio__sizes-value">4.9 м</div>
                       </li>
                       <li class="slider-portfolio__sizes-item">
                         <div class="slider-portfolio__sizes-title">Ширина</div>
-                        <div class="slider-portfolio__sizes-value">2 м</div>
+                        <div class="slider-portfolio__sizes-value">2.2 м</div>
                       </li>
                       <li class="slider-portfolio__sizes-item">
                         <div class="slider-portfolio__sizes-title">Высота</div>
-                        <div class="slider-portfolio__sizes-value">2.1 м</div>
-                      </li>
-                      <li class="slider-portfolio__sizes-item">
-                        <div class="slider-portfolio__sizes-title">Кол-во секций</div>
-                        <div class="slider-portfolio__sizes-value">3</div>
+                        <div class="slider-portfolio__sizes-value">2.2 м</div>
                       </li>
                     </ul>
                     <div class="slider-portfolio__do-block">
                       <h4 class="slider-portfolio__do-title">Было сделано:</h4>
                       <ul class="slider-portfolio__do-list">
                         <li class="slider-portfolio__do-item">
-                          - Привезли на участок
+                          - Привезли на место
                         </li>
                         <li class="slider-portfolio__do-item">
                           - Подготовили основание
                         </li>
                         <li class="slider-portfolio__do-item">
-                          - Собрали
+                          - Собрали на участке заказчика
                         </li>
                         <li class="slider-portfolio__do-item">
                           - Проверили работоспособность
@@ -1281,32 +1257,28 @@
                         </div>
                       </div>
                       <div class="slider-portfolio__location-text">
-                        Краснодар
+                        г. Славянск-на-Кубани
                       </div>
                     </div>
                     <ul class="slider-portfolio__sizes-list">
                       <li class="slider-portfolio__sizes-item">
                         <div class="slider-portfolio__sizes-title">Длина</div>
-                        <div class="slider-portfolio__sizes-value">3.4 м</div>
+                        <div class="slider-portfolio__sizes-value">6 м</div>
                       </li>
                       <li class="slider-portfolio__sizes-item">
                         <div class="slider-portfolio__sizes-title">Ширина</div>
-                        <div class="slider-portfolio__sizes-value">1.4 м</div>
+                        <div class="slider-portfolio__sizes-value">2.35 м</div>
                       </li>
                       <li class="slider-portfolio__sizes-item">
                         <div class="slider-portfolio__sizes-title">Высота</div>
-                        <div class="slider-portfolio__sizes-value">2.4 м</div>
-                      </li>
-                      <li class="slider-portfolio__sizes-item">
-                        <div class="slider-portfolio__sizes-title">Кол-во секций</div>
-                        <div class="slider-portfolio__sizes-value">4</div>
+                        <div class="slider-portfolio__sizes-value">2.5 м</div>
                       </li>
                     </ul>
                     <div class="slider-portfolio__do-block">
                       <h4 class="slider-portfolio__do-title">Было сделано:</h4>
                       <ul class="slider-portfolio__do-list">
                         <li class="slider-portfolio__do-item">
-                          - Привезли на участок
+                          - Привезли на участок в готовом виде
                         </li>
                         <li class="slider-portfolio__do-item">
                           - Подготовили основание
@@ -1352,83 +1324,75 @@
           </h2>
           <ul class="photos__list">
             <li class="photos__item">
-              <a class="colorbox photos__link-img img-load" rel="colorbox" data-fancybox="group-1"
+              <a class="colorbox photos__link-img" rel="colorbox" data-fancybox="group-1"
                 href="./img/photos/3d0c1ad4-e248-421e-b407-f13e082c8f84.webp">
-                <img data-source="./img/photos/3d0c1ad4-e248-421e-b407-f13e082c8f84.webp" src="img/0.png"
-                  alt="Пример проекта" class="box__img">
+                <img src="./img/photos/3d0c1ad4-e248-421e-b407-f13e082c8f84.webp" alt="Пример проекта" class="box__img">
               </a>
             </li>
             <li class="photos__item">
-              <a class="colorbox photos__link-img img-load" rel="colorbox" data-fancybox="group-1"
+              <a class="colorbox photos__link-img" rel="colorbox" data-fancybox="group-1"
                 href="./img/photos/21c59d06-02b4-44d0-9531-9dde6c2f57df.webp">
-                <img data-source="./img/photos/21c59d06-02b4-44d0-9531-9dde6c2f57df.webp" src="img/0.png"
-                  alt="Пример проекта" class="box__img">
+                <img src="./img/photos/21c59d06-02b4-44d0-9531-9dde6c2f57df.webp" alt="Пример проекта" class="box__img">
               </a>
             </li>
             <li class="photos__item">
-              <a class="colorbox photos__link-img img-load" rel="colorbox" data-fancybox="group-1"
+              <a class="colorbox photos__link-img" rel="colorbox" data-fancybox="group-1"
                 href="./img/photos/3b329abc-505b-4b70-9742-1aa7205eb029.webp">
-                <img data-source="./img/photos/3b329abc-505b-4b70-9742-1aa7205eb029.webp" src="img/0.png"
-                  alt="Пример проекта" class="box__img">
+                <img src="./img/photos/3b329abc-505b-4b70-9742-1aa7205eb029.webp" alt="Пример проекта" class="box__img">
               </a>
             </li>
             <li class="photos__item">
-              <a class="colorbox photos__link-img img-load" rel="colorbox" data-fancybox="group-1"
+              <a class="colorbox photos__link-img" rel="colorbox" data-fancybox="group-1"
                 href="./img/photos/IMG_0129.webp">
-                <img data-source="./img/photos/IMG_0129.webp" src="img/0.png" alt="Пример проекта" class="box__img">
+                <img src="./img/photos/IMG_0129.webp" alt="Пример проекта" class="box__img">
               </a>
             </li>
             <li class="photos__item">
-              <a class="colorbox photos__link-img img-load" rel="colorbox" data-fancybox="group-1"
+              <a class="colorbox photos__link-img" rel="colorbox" data-fancybox="group-1"
                 href="./img/photos/3A9ACA2C-280C-4D80-AB20-6C2534D19B70.webp">
-                <img data-source="./img/photos/3A9ACA2C-280C-4D80-AB20-6C2534D19B70.webp" src="img/0.png"
-                  alt="Пример проекта" class="box__img">
+                <img src="./img/photos/3A9ACA2C-280C-4D80-AB20-6C2534D19B70.webp" alt="Пример проекта" class="box__img">
               </a>
             </li>
             <li class="photos__item">
-              <a class="colorbox photos__link-img img-load" rel="colorbox" data-fancybox="group-1"
+              <a class="colorbox photos__link-img" rel="colorbox" data-fancybox="group-1"
                 href="./img/photos/IMG_0564.webp">
-                <img data-source="./img/photos/IMG_0564.webp" src="img/0.png" alt="Пример проекта" class="box__img">
+                <img src="./img/photos/IMG_0564.webp" alt="Пример проекта" class="box__img">
               </a>
             </li>
             <li class="photos__item">
-              <a class="colorbox photos__link-img img-load" rel="colorbox" data-fancybox="group-1"
+              <a class="colorbox photos__link-img" rel="colorbox" data-fancybox="group-1"
                 href="./img/photos/10e3a54d-6e5e-47d3-8e27-0a47976b494b.webp">
-                <img data-source="./img/photos/10e3a54d-6e5e-47d3-8e27-0a47976b494b.webp" src="img/0.png"
-                  alt="Пример проекта" class="box__img">
+                <img src="./img/photos/10e3a54d-6e5e-47d3-8e27-0a47976b494b.webp" alt="Пример проекта" class="box__img">
               </a>
             </li>
             <li class="photos__item">
-              <a class="colorbox photos__link-img img-load" rel="colorbox" data-fancybox="group-1"
+              <a class="colorbox photos__link-img" rel="colorbox" data-fancybox="group-1"
                 href="./img/photos/73f7e66a-4448-4bcd-b2f1-fc955ba6d341.webp">
-                <img data-source="./img/photos/73f7e66a-4448-4bcd-b2f1-fc955ba6d341.webp" src="img/0.png"
-                  alt="Пример проекта" class="box__img">
+                <img src="./img/photos/73f7e66a-4448-4bcd-b2f1-fc955ba6d341.webp" alt="Пример проекта" class="box__img">
               </a>
             </li>
             <li class="photos__item">
-              <a class="colorbox photos__link-img img-load" rel="colorbox" data-fancybox="group-1"
+              <a class="colorbox photos__link-img" rel="colorbox" data-fancybox="group-1"
                 href="./img/photos/IMG_1618.webp">
-                <img data-source="./img/photos/IMG_1618.webp" src="img/0.png" alt="Пример проекта" class="box__img">
+                <img src="./img/photos/IMG_1618.webp" alt="Пример проекта" class="box__img">
               </a>
             </li>
             <li class="photos__item">
-              <a class="colorbox photos__link-img img-load" rel="colorbox" data-fancybox="group-1"
+              <a class="colorbox photos__link-img" rel="colorbox" data-fancybox="group-1"
                 href="./img/photos/IMG_9629.webp">
-                <img data-source="./img/photos/IMG_9629.webp" src="img/0.png" alt="Пример проекта" class="box__img">
+                <img src="./img/photos/IMG_9629.webp" alt="Пример проекта" class="box__img">
               </a>
             </li>
             <li class="photos__item">
-              <a class="colorbox photos__link-img img-load" rel="colorbox" data-fancybox="group-1"
+              <a class="colorbox photos__link-img" rel="colorbox" data-fancybox="group-1"
                 href="./img/photos/51d52bfc-3cf5-415d-8f0b-a4a477c1a45e.webp">
-                <img data-source="./img/photos/51d52bfc-3cf5-415d-8f0b-a4a477c1a45e.webp" src="img/0.png"
-                  alt="Пример проекта" class="box__img">
+                <img src="./img/photos/51d52bfc-3cf5-415d-8f0b-a4a477c1a45e.webp" alt="Пример проекта" class="box__img">
               </a>
             </li>
             <li class="photos__item">
-              <a class="colorbox photos__link-img img-load" rel="colorbox" data-fancybox="group-1"
+              <a class="colorbox photos__link-img" rel="colorbox" data-fancybox="group-1"
                 href="./img/photos/3d0c1ad4-e248-421e-b407-f13e082c8f84.webp">
-                <img data-source="./img/photos/3d0c1ad4-e248-421e-b407-f13e082c8f84.webp" src="img/0.png"
-                  alt="Пример проекта" class="box__img">
+                <img src="./img/photos/3d0c1ad4-e248-421e-b407-f13e082c8f84.webp" alt="Пример проекта" class="box__img">
               </a>
             </li>
           </ul>
@@ -1653,7 +1617,7 @@
           </h3>
           <ul class="reviews__list">
             <li class="reviews__item">
-              <img class="reviews__img" src="./img/reviews.jpg">
+              <img class="reviews__img" src="./img/mqdefault.jpg">
               <button class="reviews__link reviews__link_1">
                 <svg class="reviews__icon" width="18px" height="18px">
                   <use xlink:href="./img/sprite-svg/sprite.svg#icon-play"></use>
@@ -1661,7 +1625,7 @@
               </button>
             </li>
             <li class="reviews__item">
-              <img class="reviews__img" src="./img/reviews2.jpg">
+              <img class="reviews__img" src="./img/mqdefault2.jpg">
               <button class="reviews__link reviews__link_2">
                 <svg class="reviews__icon" width="18px" height="18px">
                   <use xlink:href="./img/sprite-svg/sprite.svg#icon-play"></use>
@@ -1669,7 +1633,7 @@
               </button>
             </li>
             <li class="reviews__item">
-              <img class="reviews__img" src="./img/reviews3.jpg">
+              <img class="reviews__img" src="./img/mqdefault3.jpg">
               <button class="reviews__link reviews__link_3">
                 <svg class="reviews__icon" width="18px" height="18px">
                   <use xlink:href="./img/sprite-svg/sprite.svg#icon-play"></use>
@@ -1677,7 +1641,7 @@
               </button>
             </li>
             <li class="reviews__item">
-              <img class="reviews__img" src="./img/reviews4.jpg">
+              <img class="reviews__img" src="./img/mqdefault4.jpg">
               <button class="reviews__link reviews__link_4">
                 <svg class="reviews__icon" width="18px" height="18px">
                   <use xlink:href="./img/sprite-svg/sprite.svg#icon-play"></use>
@@ -1685,7 +1649,7 @@
               </button>
             </li>
             <li class="reviews__item">
-              <img class="reviews__img" src="./img/reviews5.jpg">
+              <img class="reviews__img" src="./img/mqdefault5.jpg">
               <button class="reviews__link reviews__link_5">
                 <svg class="reviews__icon" width="18px" height="18px">
                   <use xlink:href="./img/sprite-svg/sprite.svg#icon-play"></use>
@@ -1693,7 +1657,7 @@
               </button>
             </li>
             <li class="reviews__item">
-              <img class="reviews__img" src="./img/reviews6.jpg">
+              <img class="reviews__img" src="./img/mqdefault6.jpg">
               <button class="reviews__link  reviews__link_6">
                 <svg class="reviews__icon" width="18px" height="18px">
                   <use xlink:href="./img/sprite-svg/sprite.svg#icon-play"></use>
@@ -1735,10 +1699,10 @@
                   Мы перезвоним и ответим на все Ваши вопросы
                 </div>
               </div>
-              <form class="ready__form">
+              <form class="ready__form form-ready">
                 <input type="text" class="ready__input input mask-phone-js" name="phone"
                   placeholder="+7 (910) ___ __ __">
-                <button class="btn ready__btn" type="submit">Перезвоните мне</button>
+                <button type="submit" class="btn ready__btn">Перезвоните мне</button>
                 <div class="personal">
                   Нажимая на кнопку "Перезвоните мне" Вы соглашаетесь с
                   <a href="./privacy.html" target="_blank">условиями обработки персональных данных</a>
@@ -1869,12 +1833,12 @@
               Краснодар, пгт. Яблоновский, Тургеневское шоссе 33/1
               <strong>Вт-Сб с 10:00 до 18:00</strong>
             </div>
-            <form class="contact__form">
+            <form class="contact__form form-exhibition form-animate">
               <h3 class="contact__title">
                 Запишитесь на бесплатную экскурсию
               </h3>
-              <input type="text" id="air" name="data" class="contact__data input" placeholder="Выберите дату">
-              <input type="text" name="phone" class="contact__input input mask-phone-js" placeholder="Ваш телефон">
+              <input type="text" id="air" name="data" class="contact__data input _req" placeholder="Выберите дату">
+              <input type="text" name="phone" class="contact__input input mask-phone-js _req" placeholder="Ваш телефон">
               <button type="submit" class="btn contact__btn">Записаться</button>
               <div class="personal">
                 Нажимая на кнопку "Перезвоните мне" Вы соглашаетесь с
@@ -1902,13 +1866,14 @@
             </div>
             <ul class="socials__list">
               <li class="socials__item">
-                <a href="#" class="socials__link socials__link_vb"></a>
+                <a href="viber://chat?number=%2B79104264159" class="socials__link socials__link_vb"></a>
               </li>
               <li class="socials__item">
-                <a href="#" class="socials__link socials__link_wt"></a>
+                <a href="https://wa.me/79104264159?text=Здравствуйте%2C+у+меня+к+вам+вопрос!" target="_blank"
+                  class="socials__link socials__link_wt"></a>
               </li>
               <li class="socials__item">
-                <a href="#" class="socials__link socials__link_tg"></a>
+                <a href="https://t.me/+79104264159" target="_blank" class="socials__link socials__link_tg"></a>
               </li>
             </ul>
           </div>
@@ -2025,10 +1990,10 @@
         <div class="modal__title">
           Введите ваш номер телефона
         </div>
-        <form class="modal__row modal__form">
+        <form class="modal__row modal__form form-call">
           <input type="text" name="phone" class="modal__input input mask-phone-js _req"
             placeholder="Ваш номер телефона">
-          <button class="modal__button">
+          <button type="submit" class="modal__button">
             Перезвоните мне
           </button>
         </form>
@@ -2054,7 +2019,7 @@
 
     <div class="modal modal_shit">
       <div class="modal__inner form-animate">
-        <form class="modal__form-shit">
+        <form class="modal__form-shit form-shit">
           <button class="modal__close"></button>
           <p>Подождите не уходите! У нас для вас есть подарок</p>
           <h1 class="title">
@@ -2119,7 +2084,7 @@
               <input type="text" class="input quiz__result-input mask-phone-js" name="phone" placeholder="*Ваш телефон">
             </div>
           </div>
-          <button class="btn price__btn">Скачать PDF-файл</button>
+          <button type="submit" class="btn price__btn">Скачать PDF-файл</button>
           <div class="personal">
             Нажимая на кнопку "Скачать PDF-файл" Вы соглашаетесь с
             <a href="./privacy.html" target="_blank">условиями обработки персональных данных</a>

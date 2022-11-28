@@ -158,7 +158,7 @@
 
 .quiz__left {
   width: 27%;
-  padding: 40px 60px 60px 60px;
+  padding: 25px 60px 35px 60px;
   background-image: url("../img/Слой-1-mini.png");
   background-size: cover;
 
@@ -221,7 +221,7 @@
 
 .quiz__right {
   width: 74%;
-  padding: 60px 75px 80px 60px;
+  padding: 50px 75px 80px 50px;
   display: flex;
   flex-direction: column;
 
@@ -586,7 +586,7 @@
   }
 }
 
-.quiz__next {
+.quiz__next, .quiz__send {
   padding: 30px 45px 25px;
   font-size: 16px;
 
@@ -598,6 +598,10 @@
   @media (max-width: $minmobile) {
     font-size: 0.6rem;
   }
+}
+
+.quiz__send {
+  display: none;
 }
 
 .quiz__variant-inner {
@@ -768,9 +772,4 @@
 
 .quiz-wrap__item {
   position: relative;
-}
-
-.top {
-  position: absolute;
-  bottom: 20px;
 }

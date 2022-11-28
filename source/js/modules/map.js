@@ -53,17 +53,14 @@ const mapRealize = () => {
 
       myMap.geoObjects.add(placemark);
 
-      function retuz() {
-        setTimeout(() => {
-          ready();
-        }, 1500);
-      }
+      // function retuz() {
+      //   setTimeout(ready, 1000);
+      // }
 
-      window.addEventListener("resize", () => {
-        myMap.destroy();
-        console.log("aaaaa");
-        setTimeout(retuz, 1500);
-      })
+      // window.addEventListener("resize", () => {
+      //   myMap.destroy();
+      //   setTimeout(retuz, 1000);
+      // })
     }
 
     // Ищем и удаляем мусор с карты (кроме логотипа и копирайта)
@@ -72,11 +69,11 @@ const mapRealize = () => {
 
       if (elem) {
         elem.parentNode.removeChild(elem);
-        clearInterval(check);
+        //clearInterval(check);
       }
     }
 
-    var check = setInterval(delets, 200);
+    setTimeout(delets, 2000);
   }
 
   document.addEventListener("DOMContentLoaded", ready);

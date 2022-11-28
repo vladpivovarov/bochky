@@ -84,6 +84,14 @@
   overflow: hidden;
   border-radius: 20px;
   box-shadow: 0 15px 20px rgba(#272727, .1);
+  background-image: url("../img/bochka-right.png");
+  background-position: bottom right -100px;
+  background-repeat: no-repeat;
+  background-size: 400px;
+
+  @media (max-width: $tablet) {
+    background-image: none;
+  }
 
   @media (max-width: 1060px) {
     flex-direction: column;
@@ -161,6 +169,7 @@
   gap: 30px;
   justify-content: space-around;
   margin-bottom: 40px;
+  max-width: 350px;
 
   @media (max-width: $tablet) {
     gap: 10px;

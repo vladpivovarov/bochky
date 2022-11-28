@@ -6,6 +6,7 @@ const video = () => {
     responsive: true
   };
 
+
   const modal = document.querySelector(".modal-video");
   const close = modal.querySelector(".close");
   const modalInner = modal.querySelector(".modal-video__inner");
@@ -13,41 +14,58 @@ const video = () => {
   const videoReal = document.querySelector("video");
 
   // Подключаем видео плагин
-  const player = videojs('my-video', options, function onPlayerReady() {
-    const video = this;
+  function ready() {
 
+    const player = videojs('my-video', options, function onPlayerReady() {
+      const wrap = modal.querySelector(".my-video-dimensions");
+      wrap.classList.add("vjs-fluid");
 
-    // При клике на одну из кнопок отображаем модальное окно
-    btn.addEventListener("click", (e) => {
-      e.preventDefault();
-      modal.classList.add("modal-video_active");
-      video.play();
-    });
+      const video = this;
 
-    modal.addEventListener("click", (event) => {
-      const clickedElementsTree = event.composedPath();
+      if (video.isReady_) {
 
-      if (clickedElementsTree.includes(modalInner)) {
-        return;
-      } else {
-        modal.classList.remove("modal-video_active");
+        btn.addEventListener("click", (e) => {
+          e.preventDefault();
+          console.log("load");
+          modal.classList.add("modal-video_load");
+          setTimeout(go, 1000);
+
+          function go() {
+            console.log("play");
+            modal.classList.remove("modal-video_load");
+            modal.classList.add("modal-video_active");
+            video.play();
+          }
+        });
+      }
+
+      modal.addEventListener("click", (event) => {
+        const clickedElementsTree = event.composedPath();
+
+        if (clickedElementsTree.includes(modalInner)) {
+          return;
+        } else {
+          modal.classList.remove("modal-video_active");
+          video.pause();
+          video.currentTime(0);
+        }
+      })
+
+      close.addEventListener("click", (e) => {
+        e.preventDefault();
+
+        if (modal.classList.contains("modal-video_active")) {
+          modal.classList.remove("modal-video_active");
+        }
+
         video.pause();
-      }
-    })
-
-    close.addEventListener("click", (e) => {
-      e.preventDefault();
-
-      if (modal.classList.contains("modal-video_active")) {
-        modal.classList.remove("modal-video_active");
-      }
-
-      video.pause();
-    })
-  });
+        video.currentTime(0);
+      })
+    });
+  }
 
 
-
+  document.addEventListener("DOMContentLoaded", ready);
 }
 
 export default video;

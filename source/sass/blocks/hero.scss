@@ -17,7 +17,7 @@
     height: 600px;
     background-image: url("../img/tr-1.png");
     background-repeat: no-repeat;
-    background-size: contain
+    background-size: contain;
   }
 
   @media (max-width:1800px) {
@@ -63,6 +63,10 @@
     margin-top: 30px;
     font-size: 3rem;
     line-height: 1;
+  }
+
+  @media (max-width: $mobile) {
+    margin-top: 10px;
   }
 }
 

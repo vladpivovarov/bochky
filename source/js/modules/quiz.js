@@ -3,6 +3,7 @@ const quiz = () => {
   const questionsArray = quizBlock.querySelectorAll(".quiz__question-block");
   const nextBtn = quizBlock.querySelector(".quiz__next");
   const prevBtn = quizBlock.querySelector(".quiz__prev");
+  const sendBtn = quizBlock.querySelector(".quiz__send");
   const personal = quizBlock.querySelector(".personal");
   const progressLine = quizBlock.querySelector(".progressbar__line");
   const progressNum = quizBlock.querySelector(".progressbar__actually-question");
@@ -55,8 +56,6 @@ const quiz = () => {
   nextBtn.addEventListener("click", (event) => {
     event.preventDefault();
 
-    toTop();
-
     if (current >= (questionsArray.length - 1)) {
       return;
     }
@@ -77,6 +76,7 @@ const quiz = () => {
     }
 
     current++;
+    toTop();
 
     questionsArray.forEach((question) => {
       question.classList.remove("quiz__question-block_open");
@@ -97,7 +97,8 @@ const quiz = () => {
 
     if (current === questionsArray.length - 1) {
       personal.classList.remove("visually-hidden");
-      nextBtn.textContent = "Получить расчет";
+      nextBtn.style.display = "none";
+      sendBtn.style.display = "block";
 
       quizBlock.classList.add("quiz_finish");
       quizAuthorText.textContent = textFinish;
@@ -125,6 +126,7 @@ const quiz = () => {
       return;
     }
     current--;
+    toTop();
 
     questionsArray.forEach((question) => {
       question.classList.remove("quiz__question-block_open");
@@ -134,7 +136,8 @@ const quiz = () => {
 
     if (current != questionsArray.length - 1) {
       personal.classList.add("visually-hidden");
-      nextBtn.textContent = "Следующий вопрос";
+      nextBtn.style.display = "block";
+      sendBtn.style.display = "none";
       quizBlock.classList.remove("quiz_finish");
       quizAuthorText.textContent = textMain;
       status.textContent = textStatusMain;
