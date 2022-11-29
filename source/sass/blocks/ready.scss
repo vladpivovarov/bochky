@@ -150,6 +150,8 @@
   width: 350px;
   margin-left: auto;
   margin-right: 160px;
+  padding: 5px;
+  border-radius: 15px;
 
   @media (max-width: $tablet) {
     width: 280px;

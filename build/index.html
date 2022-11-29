@@ -220,7 +220,7 @@
               </div>
             </li>
           </ul>
-          <form class="quiz form-quiz">
+          <form class="quiz form-quiz form-animate">
             <div class="top"></div>
             <aside class="quiz__left">
               <div class="quiz__author">
@@ -302,7 +302,7 @@
                 <ul class="quiz__variants">
                   <li class="quiz__variant">
                     <label class="quiz__label">
-                      <input type="radio" value="standart" name="type" class="quiz__input visually-hidden">
+                      <input type="radio" value="standart" name="types" class="quiz__input visually-hidden">
                       <div class="quiz__variant-inner">
                         <img src="./img/баня-бочка.webp" alt="Баня-бочка от 133т.р." class="quiz__variant-img">
                       </div>
@@ -313,7 +313,7 @@
                   </li>
                   <li class="quiz__variant">
                     <label class="quiz__label">
-                      <input type="radio" value="quadro-oval" name="type" class="quiz__input visually-hidden">
+                      <input type="radio" value="quadro-oval" name="types" class="quiz__input visually-hidden">
                       <div class="quiz__variant-inner">
                         <img src="./img/Квадро-овал.webp" alt="Квадро-овал бочка от 372т.р." class="quiz__variant-img">
                       </div>
@@ -324,7 +324,7 @@
                   </li>
                   <li class="quiz__variant">
                     <label class="quiz__label">
-                      <input type="radio" value="quadro" name="type" class="quiz__input visually-hidden">
+                      <input type="radio" value="quadro" name="types" class="quiz__input visually-hidden">
                       <div class="quiz__variant-inner">
                         <img src="./img/Квадро.webp" alt="Квадро-бочка от 171т.р." class="quiz__variant-img">
                       </div>
@@ -335,7 +335,7 @@
                   </li>
                   <li class="quiz__variant">
                     <label class="quiz__label">
-                      <input type="radio" value="oval" name="type" class="quiz__input visually-hidden">
+                      <input type="radio" value="oval" name="types" class="quiz__input visually-hidden">
                       <div class="quiz__variant-inner">
                         <img src="./img/Овал.webp" alt="Овал-бочка от 339т.р." class="quiz__variant-img">
                       </div>
@@ -346,7 +346,7 @@
                   </li>
                   <li class="quiz__variant">
                     <label class="quiz__label">
-                      <input type="radio" value="okta" name="type" class="quiz__input visually-hidden">
+                      <input type="radio" value="okta" name="types" class="quiz__input visually-hidden">
                       <div class="quiz__variant-inner">
                         <img src="./img/Окта.webp" alt="Окта-бочка от 169т.р." class="quiz__variant-img">
                       </div>
@@ -371,7 +371,7 @@
                 <ul class="quiz__variants">
                   <li class="quiz__variant">
                     <label class="quiz__label">
-                      <input type="radio" value="already-yes" name="area" class="quiz__input visually-hidden">
+                      <input type="radio" value="no" name="area" class="quiz__input visually-hidden">
                       <div class="quiz__variant-inner img-load">
                         <img data-source="./img/Неготово.jpg" src="img/0.png" alt="Уже готова"
                           class="quiz__variant-img">
@@ -383,7 +383,7 @@
                   </li>
                   <li class="quiz__variant">
                     <label class="quiz__label">
-                      <input type="radio" value="no-but" name="area" class="quiz__input visually-hidden">
+                      <input type="radio" value="already-yes" name="area" class="quiz__input visually-hidden">
                       <div class="quiz__variant-inner img-load">
                         <img data-source="./img/Подготовимсами.jpg" src="img/0.png" alt="Не готова, но подготовим"
                           class="quiz__variant-img">
@@ -493,7 +493,7 @@
                     <label class="quiz__label">
                       <input type="radio" value="150-250" name="region" class="quiz__input visually-hidden">
                       <div class="quiz__variant-inner quiz__variant-inner_text">
-                        От 150км до 250 км
+                        От 150 до 250 км
                       </div>
                     </label>
                   </li>
@@ -662,7 +662,7 @@
                         <use xlink:href="./img/sprite-svg/sprite.svg#icon-phone"></use>
                       </svg>
                     </div>
-                    <input type="text" class="input quiz__result-input mask-phone-js" name="phone"
+                    <input type="text" class="input quiz__result-input mask-phone-js _req" name="phone"
                       placeholder="*Ваш телефон">
                   </div>
                 </div>
@@ -816,7 +816,7 @@
               </div>
             </div>
           </h2>
-          <form action="" class="price__form form-price">
+          <form action="" class="price__form form-price form-animate">
             <h3 class="price__form-title">
               Куда прислать прайс?
             </h3>
@@ -874,7 +874,7 @@
                     <use xlink:href="./img/sprite-svg/sprite.svg#icon-phone"></use>
                   </svg>
                 </div>
-                <input type="text" class="input quiz__result-input mask-phone-js" name="phone"
+                <input type="text" class="input quiz__result-input mask-phone-js _req" name="phone"
                   placeholder="*Ваш телефон">
               </div>
             </div>
@@ -1690,7 +1690,7 @@
                 <a href="tel:89104264159" class="ready__link">+7 (910) 426-41-59</a>
               </div>
             </div>
-            <div class="ready__form-block">
+            <div class="ready__form-block form-animate">
               <div class="ready__callme">
                 <div class="ready__callme-subtitle">
                   Или заполните форму для обратного звонка
@@ -1700,7 +1700,7 @@
                 </div>
               </div>
               <form class="ready__form form-ready">
-                <input type="text" class="ready__input input mask-phone-js" name="phone"
+                <input type="text" class="ready__input input mask-phone-js _req" name="phone"
                   placeholder="+7 (910) ___ __ __">
                 <button type="submit" class="btn ready__btn">Перезвоните мне</button>
                 <div class="personal">
@@ -1837,7 +1837,8 @@
               <h3 class="contact__title">
                 Запишитесь на бесплатную экскурсию
               </h3>
-              <input type="text" id="air" name="data" class="contact__data input _req" placeholder="Выберите дату">
+              <input type="text" id="air" name="data" class="contact__data input _req _date"
+                placeholder="Выберите дату">
               <input type="text" name="phone" class="contact__input input mask-phone-js _req" placeholder="Ваш телефон">
               <button type="submit" class="btn contact__btn">Записаться</button>
               <div class="personal">
@@ -2081,7 +2082,8 @@
                   <use xlink:href="./img/sprite-svg/sprite.svg#icon-phone"></use>
                 </svg>
               </div>
-              <input type="text" class="input quiz__result-input mask-phone-js" name="phone" placeholder="*Ваш телефон">
+              <input type="text" class="input quiz__result-input mask-phone-js _req" name="phone"
+                placeholder="*Ваш телефон">
             </div>
           </div>
           <button type="submit" class="btn price__btn">Скачать PDF-файл</button>

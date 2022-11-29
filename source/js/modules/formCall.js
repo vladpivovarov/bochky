@@ -27,7 +27,7 @@ const formCall = () => {
 
         setTimeout(function () {
           box.classList.remove("_ok");
-        }, 3000);
+        }, 5000);
       } else {
         box.classList.add("_no");
         box.classList.remove("_sending");

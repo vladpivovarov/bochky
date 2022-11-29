@@ -15,30 +15,27 @@
   $chat_id = "-1001130475336";
 
   // От кого письмо
-   $mail->setFrom("info@bochky.ru", "bochky.ru");
+  $mail->setFrom("info@krd-bochky.ru", "krd-bochky.ru");
   // Кому отправить
   $mail->addAddress("vladpivovarov2797@ya.ru");
   // Тема письма
   $mail->Subject = "ЗАЯВКА НА ОБРАТНЫЙ ЗВОНОК";
 
   $arr = array(
-    "........................" => "%0A",
     'ЗАЯВКА НА ЭКСКУРСИЮ' => "",
-    'Дата: ' => $_POST["data"],
-    'Телефон: ' => $_POST["phone"]
+    '📅 ' => $_POST["data"],
+    '☎️ ' => $_POST["phone"]
   );
-
 
   foreach($arr as $key => $value) {
     $txt .= "<b>".$key."</b> ".$value."%0A";
   };
-  $txt .= "........................";
 
   // Тело письма
   $body = "<h1>ЗАЯВКА НА ЭКСКУРСИЮ</h1>";
 
   if(trim(!empty($_POST["data"]))) {
-    $body.="<p><strong>Дата посещения:</strong> ".$_POST["data"]."</p>";
+    $body.="<p><strong>Дата:</strong> ".$_POST["data"]."</p>";
   }
   if(trim(!empty($_POST["phone"]))) {
     $body.="<p><strong>Телефон:</strong> ".$_POST["phone"]."</p>";

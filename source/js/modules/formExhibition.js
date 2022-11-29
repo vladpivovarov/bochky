@@ -2,8 +2,6 @@ const formExhibition = () => {
   const form = document.querySelector(".form-exhibition");
   const box = document.querySelector(".form-exhibition");
 
-  console.log(box);
-
   form.addEventListener("submit", formSend);
 
   async function formSend(e) {
@@ -28,7 +26,7 @@ const formExhibition = () => {
 
         setTimeout(function () {
           box.classList.remove("_ok");
-        }, 3000);
+        }, 5000);
       } else {
         box.classList.add("_no");
         box.classList.remove("_sending");
@@ -51,6 +49,25 @@ const formExhibition = () => {
       formRemoveError(input);
 
       // Проверка поля email, chekbox(согласия на обработку данных) и текстовых полей
+      if (input.classList.contains("_date")) {
+        let nowDate = new Date();
+        let part = input.value;
+        let partFirst = part.slice(0, 2);
+        let partMedium = part.slice(3, 5);
+        let partLast = part.slice(6, 10);
+        let finish = partLast + "-" + partMedium + "-" + partFirst;
+        let date1 = new Date(finish);
+        let days = ["Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"];
+        let dayOfWeek = days[date1.getDay()];
+
+        console.log(nowDate.getHours());
+
+        if ((dayOfWeek === days[0]) || (dayOfWeek === days[1]) || (nowDate.getTime() > date1.getTime())) {
+          formAddError(input);
+          error++;
+        }
+      }
+
       if (input.classList.contains("_email")) {
         if (emailTest(input)) {
           formAddError(input);
